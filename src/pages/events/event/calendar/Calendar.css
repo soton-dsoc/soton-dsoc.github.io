@@ -1,0 +1,31 @@
+@import 'add-to-calendar-button/assets/css/atcb.min';
+
+.displaynone {
+    display:none;
+}
+
+.atcb_button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: black;
+    background-color: white;
+    font-weight: 500;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.atcb_list_item {
+    border: none;
+    box-shadow: none;
+}
+
+.atcb_list_item:hover {
+    box-shadow: none;
+    background: #c7c7c7;
+}
+
+.atcb_list_item:first-child {
+    padding-top: 12px;
+}

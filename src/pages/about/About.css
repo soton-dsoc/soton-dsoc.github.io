@@ -1,0 +1,52 @@
+.about p {
+    text-align: justify;
+}
+
+.about-text {
+    font-size: 18px;
+}
+
+.team {
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: linear-gradient(-45deg, #5E5E5E, #2B2B2B);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    min-width: 45%;
+    max-width: 45%;
+}
+
+@media screen and (max-width: 1000px) {
+    .team {
+        flex-direction: column;
+    }
+
+    .team-card {
+        min-width: initial;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+}
+
+
+.team-card > img {
+    border-radius: 10px;
+
+}
+
+.team-card-text {
+    margin-left: 20px;
+}
+
+.team-card-name {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+}

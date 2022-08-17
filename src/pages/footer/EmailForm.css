@@ -1,0 +1,107 @@
+:root {
+    --width-empty: 350px;
+    --width-expanded: 250px;
+}
+
+@media (max-width: 1000px) {
+    .EmailForm {
+        /* position: relative;
+        background: green;
+        transform: scale(0.6, 0.6);
+        margin-right: auto;
+        margin-left: auto; */
+        /* flex-direction: column; */
+    }
+}
+
+#email-newsletter {
+    height: 10px;
+    /* float: left; */
+    border-style: solid;
+    border-width: 3px;
+    border-color: #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Roboto Mono', 'Courier', 'monospace';
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+.form-n-button {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+.everything {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#subscribe-text {
+    color: #fff;
+    font-family: 'Roboto Mono', Courier, monospace;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: left;
+    padding: 15px;
+    padding-left: 0px;
+}
+
+#paper-plane{
+    height: 35px;
+}
+
+.button-hidden {
+    width: 50%;
+    overflow-x: hidden;
+}
+
+.button-shown {
+    width: 100%;
+}
+
+/* .static-button-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+} */
+
+/* 
+.box_expanded {
+    width: var(--width-expanded);
+    animation: slideout 0.2s ease-in-out;
+}
+
+.box_compressed {
+    width: var(--width-compressed);
+    animation: slidein 0.2s ease-in-out;
+}
+
+@keyframes slidein {
+    from {
+        width: var(--width-expanded);
+    }
+    to {
+        width: var(--width-compressed);
+    }
+}
+
+@keyframes slideout {
+    from {
+        width: var(--width-compressed);
+    } to {
+        width: var(--width-expanded);
+    }
+}
+*/
+
+
+/* ::placeholder {
+    font-family: 'Roboto Mono', 'Courier', 'monospace';
+    font-weight: 300;
+    font-size: 18px;
+} */
