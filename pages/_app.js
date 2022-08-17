@@ -1,7 +1,10 @@
 import '../styles/globals.css'
+import '../styles/EmailForm.css';
+import '../styles/Events.css';
+import '../styles/Events.css';
+import '../styles/Home.css';
+import '../styles/Navbar.css';
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
-
-export default MyApp

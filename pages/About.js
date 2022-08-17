@@ -1,24 +1,13 @@
-import react from 'react';
 import React from 'react';
 
 // import './About.css';
 import { Button } from '@mantine/core';
-import george from './george.png'
-import german from './german.jpg'
-import victor from './victor.png'
-import euan from './euan.png'
+import german from '../public/german.jpg'
+import victor from '../public/victor.png'
 
-
-function About() {
+export default function About() {
 
     const team = [
-        {
-            name: "George Giamouridis",
-            photo: george,
-            text: `
-            PhD Researcher
-            `
-        },
         {
             name: "German Nikolishin",
             photo: german,
@@ -33,14 +22,6 @@ function About() {
             Deputy Education Officer
             `
         },
-        {
-            name: "Euan Caskie",
-            photo: euan,
-            text: `
-            Web Officer
-            `
-        },
-
     ]
 
     return (
@@ -80,5 +61,3 @@ function About() {
 
     )
 }
-
-export default About;

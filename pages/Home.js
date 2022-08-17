@@ -1,9 +1,8 @@
-import './Home.css';
 import React from 'react';
-import { ReactComponent as DiscordLogo } from './discord-logo.svg'
-// import configs from '../../config.js'
+import { ReactComponent as DiscordLogo } from '../public/discord-logo.svg'
+import configs from '../config.js'
 
-function Home() {
+export default function Home() {
     return (
         <div className='home'>
             <div className='home-block home-block-title'>
@@ -43,5 +42,3 @@ function Home() {
         </div>
     );
 }
-
-export default Home;
