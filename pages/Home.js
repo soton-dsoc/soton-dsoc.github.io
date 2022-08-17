@@ -1,7 +1,7 @@
 import './Home.css';
 import React from 'react';
 import { ReactComponent as DiscordLogo } from './discord-logo.svg'
-import configs from '../../config.js'
+// import configs from '../../config.js'
 
 function Home() {
     return (

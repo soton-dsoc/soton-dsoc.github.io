@@ -7,7 +7,7 @@ import { marked } from 'marked';
 
 import Form from './form/Form.js'
 import AddToCalendar from './calendar/Calendar';
-import configs from '../../../config';
+// import configs from '../../../config';
 
 function Event(props) {
 

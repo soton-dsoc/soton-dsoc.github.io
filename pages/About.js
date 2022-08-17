@@ -1,7 +1,7 @@
 import react from 'react';
 import React from 'react';
 
-import './About.css';
+// import './About.css';
 import { Button } from '@mantine/core';
 import george from './george.png'
 import german from './german.jpg'
@@ -49,17 +49,13 @@ function About() {
 
             <div className='about-text'>
                 <p>
-                    Since September 2021, we advocate for internet freedom, web3 technologies and decentralised internet.
+                Established in September 2021, the University of Southampton Decentralised Society (commonly known as dSoc) was founded with the purpose of exploring and educating other students in the field of decentralisation, building a community to discuss new ideas, and creating an environment to pursue successful projects related to Web3.
                 </p>
 
                 <p>
-                    dSoc functions like a DAO (Decentralised Autonomous Organisation), meaning it's up to the collective agreement of its members to decide what dSoc can be.
-                    The society holds regular meetings to discuss current affairs in crypto world, new projects or trends on crypto markets.
+                Whether you have just heard about blockchain or you are a smart contract developer, we'd love to see you in our meetings sharing your opinion with other like-minded people!
                 </p>
 
-                <p>
-                    Whether you support the crypto revolution or not, come along and share your opinion with other like-minded people.
-                </p>
                 <div className='spacer'></div>
             </div>
 

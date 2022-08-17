@@ -1,8 +1,8 @@
 // import './App.css';
-import Navbar from './navbar/Navbar.js'
-import Home from './home/Home.js'
-import Events from './events/Events.js'
-import About from './about/About.js'
+import Navbar from './Navbar.js'
+import Home from './Home.js'
+import Events from './Events.js'
+import About from './About.js'
 import Footer from './footer/Footer.js'
 import EventModal from './modal/event/Event.js'
 // import { Button, Modal } from '@mantine/core';

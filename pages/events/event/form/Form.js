@@ -1,7 +1,7 @@
 import { Input, Select, InputWrapper, TextInput, Chips, Chip } from '@mantine/core'
 import axios from 'axios'
 import { useState, useRef } from 'react'
-import configs from '../../../../config'
+// import configs from '../../../../config'
 import './Form.css'
 import validator from 'validator'
 
