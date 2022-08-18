@@ -1,26 +1,36 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+
 import Home from './home'
+import About from './about'
+// import Events from './events'
+
+
 import Image from 'next/image'
 import indexStyles from '../styles/Index.module.css'
 import { useState } from 'react'
 import SmoothScroll from 'smooth-scroll'
 
-const smoothScroll = new SmoothScroll();
+// const smoothScroll = new SmoothScroll();
 
-(window as any).smoothScroll = smoothScroll; /* this might not be the best solution */
+// window.smoothScroll = smoothScroll;
 
-const scrollTo = (val: any) => {
-  smoothScroll.animateScroll(val);
-}
+// const scrollTo = (val: any) => {
+//   smoothScroll.animateScroll(val);
+// }
 
-(window as any)._scrollTo = (val: any) => { /* figure out type for val */
-  smoothScroll.animateScroll(val);
-}
+// window._scrollTo = (val: any) => {
+//   smoothScroll.animateScroll(val);
+// }
 
-(window as any)._scrollToElement = (el: any) =>{
-  scrollTo(document.getElementById(el).getBoundingClientRect().top - window.innerHeight / 8 + window.scrollY)
-}
+// window._scrollToElement = (el: string) => {
+//   const element: HTMLElement | null = document.getElementById(el);
+
+//   if (element) {
+//     scrollTo(element.getBoundingClientRect().top - window.innerHeight / 8 + window.scrollY)
+//   }
+// }
+
 
 const Index: NextPage = () => {
   return (
@@ -32,6 +42,11 @@ const Index: NextPage = () => {
       </Head>
 
       <Home></Home>
+      <div style={{ maxWidth: '100%', padding: '0 8vw' }}>
+        <About></About>
+        {/* <Events></Events> */}
+      </div>
+
     </div>
   )
 }

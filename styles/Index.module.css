@@ -20,48 +20,49 @@ a:visited {
   font-weight: 300;
   background: linear-gradient(to right top, #010101, #424242);
   color-scheme: 'dark';
-  font-family: 'Arial'; /* change this */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .row {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .align-center {
-    align-items: center;
+  align-items: center;
 }
 
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .justify-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .spacer {
-    height: 50px;
+  height: 50px;
 }
 
 .margin-auto {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 1000px) {
-    .spacer {
-        height: 20px;
-    }
+  .spacer {
+    height: 20px;
+  }
 }
+  
