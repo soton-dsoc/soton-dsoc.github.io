@@ -19,6 +19,8 @@ a:visited {
   font-size: 14px;
   font-weight: 300;
   background: linear-gradient(to right top, #010101, #424242);
+  color-scheme: 'dark';
+  font-family: 'Arial'; /* change this */
 }
 
 .flex {

@@ -2,8 +2,25 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Home from './home'
 import Image from 'next/image'
-
 import indexStyles from '../styles/Index.module.css'
+import { useState } from 'react'
+import SmoothScroll from 'smooth-scroll'
+
+const smoothScroll = new SmoothScroll();
+
+(window as any).smoothScroll = smoothScroll; /* this might not be the best solution */
+
+const scrollTo = (val: any) => {
+  smoothScroll.animateScroll(val);
+}
+
+(window as any)._scrollTo = (val: any) => { /* figure out type for val */
+  smoothScroll.animateScroll(val);
+}
+
+(window as any)._scrollToElement = (el: any) =>{
+  scrollTo(document.getElementById(el).getBoundingClientRect().top - window.innerHeight / 8 + window.scrollY)
+}
 
 const Index: NextPage = () => {
   return (
