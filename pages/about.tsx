@@ -15,63 +15,47 @@ function About() {
     const team: {
         name: string;
         photo: StaticImageData;
-        text: string;
+        role: string;
     }[] = [
         {
             name: "German Nikolishin",
             photo: german,
-            text: `
-            President
-            `
+            role: "President"
         },
         {
             name: "Victor Gabaldon",
             photo: victor,
-            text: `
-            Vice President
-            `
+            role: "Vice President"
         },
         {
             name: "James Tidbury",
             photo: dsoc,
-            text: `
-            Financial Officer
-            `
+            role: "Financial Officer"
         },
         {
             name: "Olly Ferrier",
             photo: dsoc,
-            text: `
-            Events Officer
-            `
+            role: "Events Officer"
         },
         {
             name: "Jie-Jie Chan",
             photo: dsoc,
-            text: `
-            DeFi Officer
-            `
+            role: "DeFi Officer"
         },
         {
             name: "Jin Tanaka",
             photo: dsoc,
-            text: `
-            Graphics Designer
-            `
+            role: "Graphics Designer"
         },
         {
             name: "Fernando del Aguila",
             photo: dsoc,
-            text: `
-            DeFi & Blockchain Lead
-            `
+            role: "DeFi & Blockchain Lead"
         },
         {
             name: "Otmane Yessouf",
             photo: dsoc,
-            text: `
-            Marketing Officer
-            `
+            role: "Marketing Officer"
         },
     ]
 
@@ -94,13 +78,10 @@ function About() {
                 {
                     team.map((p, i) =>
                         <div className={styles["team-card"]} key={i}>
-                            <img src={p.photo.src} style={{ height: "100px" }} ></img>
+                            <img src={p.photo.src}></img>
                             <div className={styles["team-card-text"]}>
-                                <div className={styles["team-card-name"]}>
-                                    {p.name}
-                                </div>
-                                <div className={styles['team-card-name-text']} dangerouslySetInnerHTML={{ __html: p.text }}>
-                                </div>
+                                <div className={styles["team-card-name"]}>{p.name}</div>
+                                <div className={styles['team-card-role']}>{p.role}</div>
                             </div>
                         </div>
                     )
