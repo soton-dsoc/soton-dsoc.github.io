@@ -4,14 +4,19 @@ import React from 'react';
 
 // import './About.css';
 import { Button } from '@mantine/core';
+import { StaticImageData } from 'next/image';
 
-// TS does not complain with require, since it returns type any
-const german = require('../public/german.jpg');
-const victor = require('../public/victor.png');
+import german from '../public/german.jpg';
+import victor from '../public/victor.png';
+import dsoc from '../public/dsoc-logo-white.svg'
 
 function About() {
 
-    const team = [
+    const team: {
+        name: string;
+        photo: StaticImageData;
+        text: string;
+    }[] = [
         {
             name: "German Nikolishin",
             photo: german,
@@ -28,42 +33,42 @@ function About() {
         },
         {
             name: "James Tidbury",
-            photo: german,
+            photo: dsoc,
             text: `
             Financial Officer
             `
         },
         {
             name: "Olly Ferrier",
-            photo: german,
+            photo: dsoc,
             text: `
             Events Officer
             `
         },
         {
             name: "Jie-Jie Chan",
-            photo: german,
+            photo: dsoc,
             text: `
             DeFi Officer
             `
         },
         {
             name: "Jin Tanaka",
-            photo: german,
+            photo: dsoc,
             text: `
             Graphics Designer
             `
         },
         {
             name: "Fernando del Aguila",
-            photo: german,
+            photo: dsoc,
             text: `
             DeFi & Blockchain Lead
             `
         },
         {
             name: "Otmane Yessouf",
-            photo: german,
+            photo: dsoc,
             text: `
             Marketing Officer
             `
@@ -80,7 +85,7 @@ function About() {
                 </p>
 
                 <p>
-                    Whether you have just heard about blockchain or you are a smart contract developer, we'd love to see you in our meetings sharing your opinion with other like-minded people!
+                    Whether you have just heard about blockchain or you are a smart contract developer, we'd love to see you in our meetings sharing your views with other like-minded people!
                 </p>
                 <div className={styles.spacer}></div>
             </div>
@@ -88,9 +93,9 @@ function About() {
             <div className={styles.team}>
                 {
                     team.map((p, i) =>
-                        <div className={classnames(styles["team-card"], styles.flex, styles.row)} key={i}>
-                            <img src={p.photo} style={{ height: "100px" }} ></img> {/* not sure if "as any" is the best solution */}
-                            <div className={classnames(styles["team-card-text"], styles.flex, styles.column)}>
+                        <div className={styles["team-card"]} key={i}>
+                            <img src={p.photo.src} style={{ height: "100px" }} ></img>
+                            <div className={styles["team-card-text"]}>
                                 <div className={styles["team-card-name"]}>
                                     {p.name}
                                 </div>

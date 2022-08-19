@@ -18,13 +18,13 @@ class Footer extends React.Component {
                 <div className={styles["footer-top"]}>
                     <div className={styles["social-box"]}>
                         <div className={styles.twitter}>
-                            <img alt="" src={twitterLogo} onClick={()=> window.open(configs.twitter, "_blank")} className={styles["footer-icon"]} id={styles["twitter-icon"]} />
+                            <img alt="" src={twitterLogo.src} onClick={()=> window.open(configs.twitter, "_blank")} className={styles["footer-icon"]} id={styles["twitter-icon"]} />
                         </div>
                         <div className={styles["discord-box"]}>
-                            <img alt="" src={discordLogo} onClick={()=> window.open(configs.discord_invite, "_blank")} className={styles["footer-icon"]} id={styles["discord-icon"]} />
+                            <img alt="" src={discordLogo.src} onClick={()=> window.open(configs.discord_invite, "_blank")} className={styles["footer-icon"]} id={styles["discord-icon"]} />
                         </div>
                         <div className={styles["linkedin-box"]}>
-                            <img alt="" src={linkedinLogo} onClick={()=> window.open(configs.linkedin, "_blank")} className={styles["footer-icon"]} id={styles["linkedin-icon"]} />
+                            <img alt="" src={linkedinLogo.src} onClick={()=> window.open(configs.linkedin, "_blank")} className={styles["footer-icon"]} id={styles["linkedin-icon"]} />
                         </div>
                     </div>
 
@@ -36,9 +36,12 @@ class Footer extends React.Component {
                 <div className={styles['footer-bottom']}>
                     <div className={styles["footer-left"]}>
                         <div className={styles.hae}>
-                            <div onClick={ () => window._scrollTo(0) }>Home</div>
+                            {/* <div onClick={ () => window._scrollTo(0) }>Home</div>
                             <div onClick={ () => window._scrollToElement('about') }>About</div>
-                            <div onClick={ () => window._scrollToElement('events') }>Events</div>
+                            <div onClick={ () => window._scrollToElement('events') }>Events</div> */}
+                            <div>Home</div>
+                            <div>About</div>
+                            <div>Events</div>
                         </div>
                     </div>
 
