@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import Home from './home'
 import About from './about'
-// import Events from './events'
+import Events from './events'
 
 
 import Image from 'next/image'
@@ -44,7 +44,7 @@ const Index: NextPage = () => {
       <Home></Home>
       <div style={{ maxWidth: '100%', padding: '0 8vw' }}>
         <About></About>
-        {/* <Events></Events> */}
+        <Events></Events>
       </div>
 
     </div>

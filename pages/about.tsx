@@ -5,8 +5,9 @@ import React from 'react';
 // import './About.css';
 import { Button } from '@mantine/core';
 
-import german from '../public/german.jpg'
-import victor from '../public/victor.png'
+// TS does not complain with require, since it returns type any
+const german = require('../public/german.jpg');
+const victor = require('../public/victor.png');
 
 function About() {
 
@@ -46,7 +47,7 @@ function About() {
                 {
                     team.map((p, i) =>
                         <div className={classnames(styles["team-card"], styles.flex, styles.row)} key={i}>
-                            <img src={(p.photo as any)} style={{ height: "100px" }} ></img> {/* not sure if "as any" is the best solution */}
+                            <img src={p.photo} style={{ height: "100px" }} ></img> {/* not sure if "as any" is the best solution */}
                             <div className={classnames(styles["team-card-text"], styles.flex, styles.column)}>
                                 <div className={styles["team-card-name"]}>
                                     {p.name}
