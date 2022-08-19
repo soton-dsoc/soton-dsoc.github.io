@@ -26,6 +26,48 @@ function About() {
             Vice President
             `
         },
+        {
+            name: "James Tidbury",
+            photo: german,
+            text: `
+            Financial Officer
+            `
+        },
+        {
+            name: "Olly Ferrier",
+            photo: german,
+            text: `
+            Events Officer
+            `
+        },
+        {
+            name: "Jie-Jie Chan",
+            photo: german,
+            text: `
+            DeFi Officer
+            `
+        },
+        {
+            name: "Jin Tanaka",
+            photo: german,
+            text: `
+            Graphics Designer
+            `
+        },
+        {
+            name: "Fernando del Aguila",
+            photo: german,
+            text: `
+            DeFi & Blockchain Lead
+            `
+        },
+        {
+            name: "Otmane Yessouf",
+            photo: german,
+            text: `
+            Marketing Officer
+            `
+        },
     ]
 
     return (
@@ -43,7 +85,7 @@ function About() {
                 <div className={styles.spacer}></div>
             </div>
 
-            <div className={classnames(styles.team, styles.flex, styles.row)}>
+            <div className={styles.team}>
                 {
                     team.map((p, i) =>
                         <div className={classnames(styles["team-card"], styles.flex, styles.row)} key={i}>
@@ -60,8 +102,6 @@ function About() {
                 }
             </div>
         </div>
-
-
     )
 }
 

@@ -8,6 +8,8 @@
 
 .team {
     flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
 }
 
 .team-card {
@@ -54,4 +56,3 @@
 .spacer {
     height: 50px;
 }
-  

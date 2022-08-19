@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
+import Navbar from './navbar'
 import Home from './home'
 import About from './about'
 import Events from './events'
@@ -10,6 +11,8 @@ import Image from 'next/image'
 import indexStyles from '../styles/Index.module.css'
 import { useState } from 'react'
 import SmoothScroll from 'smooth-scroll'
+import Footer from './footer'
+// import { Navbar } from '@mantine/core'
 
 // const smoothScroll = new SmoothScroll();
 
@@ -41,12 +44,15 @@ const Index: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Home></Home>
-      <div style={{ maxWidth: '100%', padding: '0 8vw' }}>
-        <About></About>
-        <Events></Events>
+      <Navbar></Navbar>
+      <div className={indexStyles["body-wrapper"]}>
+        <Home></Home>
+        <div style={{ maxWidth: '100%', padding: '0 8vw' }}>
+          <About></About>
+          <Events></Events>
+        </div>
+        <Footer></Footer>
       </div>
-
     </div>
   )
 }

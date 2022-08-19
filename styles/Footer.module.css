@@ -1,0 +1,74 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap'); */
+
+.Footer {
+    /* bottom: 0; */
+    background-color: #000;
+    padding: 40px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .footer-right {
+        margin-top: 20px;
+    }
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-icon {
+    height: 20px;
+}
+
+.hae {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+}
+
+#dsoc-logo {
+    height: 35px;
+}
+
+.dsoc-icon {
+    display: flex;
+    justify-content: flex-end;
+}
