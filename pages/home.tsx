@@ -1,5 +1,6 @@
 import configs from '../config'
 import styles from '../styles/Home.module.css'
+import discordLogo from '../public/discord-logo.svg'
 import classnames from 'classnames';
 
 function Home() {
@@ -18,11 +19,11 @@ function Home() {
             </div>
 
             <div className={classnames(styles["home-block"], styles["home-block-cta"])}>
-                <div className={classnames(styles.flex, styles.column, styles["align-center"], styles["justify-center"])}>
+                <div className={styles["button-wrapper"]}>
                     <a href={configs.discord_invite} target="_blank">
                         <div className={classnames(styles["home-button"], styles["home-button-join"])}>
                             Join us
-                            {/* <DiscordLogo style={{ height: '20px', marginLeft: '5px' }}></DiscordLogo> */}
+                            <img src={discordLogo.src} style={{ height: '20px', marginLeft: '10px' }}/>
                         </div>
                     </a>
 

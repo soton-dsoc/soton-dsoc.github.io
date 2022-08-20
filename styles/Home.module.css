@@ -7,7 +7,7 @@
 .home-block {
     flex: 1;
     display: flex; 
-    align-items: center; 
+    align-items: center;
 }
 
 .home-block-title {
@@ -15,6 +15,13 @@
 }
 
 .home-block-cta {
+    justify-content: center;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -46,7 +53,6 @@
     user-select: none;
     /* box-shadow: ; */
 }
-
 
 
 .home-button-join {
