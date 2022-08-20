@@ -65,4 +65,10 @@ a:visited {
     height: 20px;
   }
 }
+
+.body-wrapper {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
   

@@ -47,12 +47,10 @@ const Index: NextPage = () => {
       <Navbar></Navbar>
       <div className={indexStyles["body-wrapper"]}>
         <Home></Home>
-        <div style={{ maxWidth: '100%', padding: '0 11.5vw' }}> {/* this is very dodgy. we need to unify padding everywhere */}
           <About></About>
           <Events></Events>
-        </div>
-        <Footer></Footer>
       </div>
+      <Footer></Footer>
     </div>
   )
 }
