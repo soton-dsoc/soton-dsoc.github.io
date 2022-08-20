@@ -13,12 +13,13 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: 100px;
+    column-gap: 50px;
     row-gap: 50px;
 }
 
 .team-card {
-    background: linear-gradient(-45deg, #252525, #363636);
+    /* background: linear-gradient(-45deg, #1a1a1a, #161616); */
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -29,7 +30,7 @@
 
 .team-card > img {
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: 50%;
     height: 150px;
 }
 
