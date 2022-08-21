@@ -10,6 +10,8 @@ a:visited {
     cursor: auto;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 .container {
   margin: 0;
   font-family: 'Roboto Mono';
@@ -20,7 +22,6 @@ a:visited {
   font-weight: 300;
   background: linear-gradient(to right top, #010101, #424242);
   color-scheme: 'dark';
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .flex {

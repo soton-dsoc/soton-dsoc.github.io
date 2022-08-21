@@ -28,7 +28,7 @@ function Navbar() {
                         {/* <div onClick={ () => window._scrollToElement('about') }>About</div>
                         <div onClick={ () => window._scrollToElement('events') }>Events</div> */}
                         <div>About</div>
-                        <div>Events</div>
+                        {/* <div>Contact</div> */}
                     </div>
                 </div>
 
