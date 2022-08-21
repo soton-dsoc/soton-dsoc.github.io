@@ -7,8 +7,10 @@ import { Button } from '@mantine/core';
 import { StaticImageData } from 'next/image';
 
 import dsocEvent from '../public/dsoc-event.jpg'
+import audience from '../public/audience.jpg'
+
 import german from '../public/german.jpg';
-import victor from '../public/victor.png';
+import victor from '../public/victor_cropped.jpg';
 import dsoc from '../public/dsoc-logo-white.svg'
 
 
@@ -66,18 +68,33 @@ function About() {
             <h1>About</h1>
 
             <div className={styles["about-container"]}>
-                <div className={styles["about-text"]}>
-                    <p>
-                        Established in September 2021, the University of Southampton Decentralised Society (commonly known as dSoc) was founded with the purpose of exploring and educating other students in the field of decentralisation, building a community to discuss new ideas, and creating an environment to pursue successful projects related to Web3.
-                    </p>
+                <div className={styles["upper-container"]}>
+                    <div className={styles["about-text"]}>
+                        <p>
+                            Established in September 2021, the University of Southampton Decentralised Society (commonly known as dSoc) was founded with the purpose of exploring and educating other students in the field of decentralisation, building a community to discuss new ideas, and creating an environment to pursue successful projects related to Web3.
+                        </p>
 
-                    <p>
-                        Whether you have just heard about blockchain or you are a smart contract developer, we'd love to see you in our meetings sharing your views with other like-minded people!
-                    </p>
-                    <div className={styles.spacer}></div>
+                        <p>
+                            Whether you have just heard about blockchain or you are a smart contract developer, we'd love to see you in our meetings sharing your views with other like-minded people!
+                        </p>
+                    </div>
+
+                    <img src={dsocEvent.src} style={{ height:"350px", borderRadius:"25px" }}/>
                 </div>
 
-                <img src={dsocEvent.src} style={{ width:"600px", borderRadius:"25px" }}/>
+                <div className={styles["lower-container"]}>
+                    <img src={audience.src} style={{ height:"350px", borderRadius:"25px" }}/>
+
+                    <div className={styles["about-text"]}>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+
+                        <p>
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <h2>Meet the core team</h2>
@@ -86,7 +103,7 @@ function About() {
                 {
                     team.map((p, i) =>
                         <div className={styles["team-card"]} key={i}>
-                            <img src={p.photo.src}></img>
+                            <img src={p.photo.src} className={styles["clip-circle"]}></img>
                             <div className={styles["team-card-text"]}>
                                 <div className={styles["team-card-name"]}>{p.name}</div>
                                 <div className={styles['team-card-role']}>{p.role}</div>

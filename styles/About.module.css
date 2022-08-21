@@ -8,8 +8,16 @@
 
 .about-container {
     display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.upper-container, .lower-container {
+    display: flex;
     flex-direction: row;
     gap: 50px;
+    align-items: center;
 }
 
 .team {
@@ -35,8 +43,11 @@
 
 .team-card > img {
     margin-top: 20px;
-    border-radius: 50%;
     height: 200px;
+}
+
+.clip-circle  {
+    clip-path: circle(100px at center);
 }
 
 .team-card-text {
