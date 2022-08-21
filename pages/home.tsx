@@ -14,12 +14,20 @@ function Home() {
             let scrollValue = window.scrollY;
             if (homeDiv) {
                 let scaleValue = Math.max(1, 0.9 + scrollValue / 1000);
+                let blurValue = 0;
 
                 if (scaleValue > 7) {
                     scaleValue = 1;
                 }
+
+                if (scrollValue > 100) {
+                    blurValue = scrollValue / 150;
+                }
+
+                // if (blurValue < )
                 homeDiv.style.transform = `scale(${scaleValue})`;
-                console.log(scaleValue);
+                homeDiv.style.filter = `blur(${blurValue}px)`;
+                console.log(scrollValue);
             }
         })
     }
