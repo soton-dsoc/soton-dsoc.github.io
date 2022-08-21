@@ -16,8 +16,10 @@ function Home() {
                 let scaleValue = Math.max(1, 0.9 + scrollValue / 1000);
                 let blurValue = 0;
 
-                if (scaleValue > 7) {
-                    scaleValue = 1;
+                if (scaleValue > 1.7) {
+                    homeDiv.style.visibility = "hidden";
+                } else {
+                    homeDiv.style.visibility = "visible";
                 }
 
                 if (scrollValue > 100) {
@@ -27,7 +29,7 @@ function Home() {
                 // if (blurValue < )
                 homeDiv.style.transform = `scale(${scaleValue})`;
                 homeDiv.style.filter = `blur(${blurValue}px)`;
-                console.log(scrollValue);
+                console.log(scaleValue);
             }
         })
     }

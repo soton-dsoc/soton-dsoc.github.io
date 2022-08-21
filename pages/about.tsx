@@ -6,9 +6,11 @@ import React from 'react';
 import { Button } from '@mantine/core';
 import { StaticImageData } from 'next/image';
 
+import dsocEvent from '../public/dsoc-event.jpg'
 import german from '../public/german.jpg';
 import victor from '../public/victor.png';
 import dsoc from '../public/dsoc-logo-white.svg'
+
 
 function About() {
 
@@ -61,18 +63,24 @@ function About() {
 
     return (
         <div className={styles.about}>
-            <h1>About us</h1>
+            <h1>About</h1>
 
-            <div className={styles["about-text"]}>
-                <p>
-                    Established in September 2021, the University of Southampton Decentralised Society (commonly known as dSoc) was founded with the purpose of exploring and educating other students in the field of decentralisation, building a community to discuss new ideas, and creating an environment to pursue successful projects related to Web3.
-                </p>
+            <div className={styles["about-container"]}>
+                <div className={styles["about-text"]}>
+                    <p>
+                        Established in September 2021, the University of Southampton Decentralised Society (commonly known as dSoc) was founded with the purpose of exploring and educating other students in the field of decentralisation, building a community to discuss new ideas, and creating an environment to pursue successful projects related to Web3.
+                    </p>
 
-                <p>
-                    Whether you have just heard about blockchain or you are a smart contract developer, we'd love to see you in our meetings sharing your views with other like-minded people!
-                </p>
-                <div className={styles.spacer}></div>
+                    <p>
+                        Whether you have just heard about blockchain or you are a smart contract developer, we'd love to see you in our meetings sharing your views with other like-minded people!
+                    </p>
+                    <div className={styles.spacer}></div>
+                </div>
+
+                <img src={dsocEvent.src} style={{ width:"600px", borderRadius:"25px" }}/>
             </div>
+
+            <h2>Meet the core team</h2>
 
             <div className={styles.team}>
                 {
