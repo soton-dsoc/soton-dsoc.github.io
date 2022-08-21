@@ -7,6 +7,10 @@
     justify-content: center;
 }
 
+.about {
+    /* margin-top: 100vh; */
+}
+
 .team {
     margin-top: 75px;
     margin-bottom: 100px;
