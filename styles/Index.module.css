@@ -71,5 +71,8 @@ a:visited {
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
   

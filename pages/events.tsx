@@ -4,48 +4,72 @@ import styles from '../styles/Events.module.css';
 // import Event from './event/Event.js'
 import configs from '../config';
 import classNames from 'classnames';
+import { ColorFormat } from '@mantine/core/lib/components/ColorPicker/types';
+import EventObject from './EventObject';
 
 function Events() {
 
-    const [events, setEvents] = useState(null)
+    type Event = {
+        title: string,
+        date: Date,
+        description: string,
+        colour: string,
+    }
 
-    const currentDate = new Date()
+    function determineSection(date: Date) {
+        var today = new Date()
+        return date > today ? "upcoming" : "past"
+    }
 
-    // useEffect(() => {
-    //     axios.get(configs.api.baseUrl + '/api/events?populate=*').then(r => {
-    //         setEvents(r.data.data)
-    //     })
-    // }, [])
+    const events: Event[] = [
+        {
+            title: "Big Event",
+            date: new Date("2022-10-31T22:00:00"),
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            colour: "#050433"
+        },
+        {
+            title: "Best Event Ever",
+            date: new Date("2020-11-15T20:30:00"),
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            colour: "#f405d3"
+        }
+    ]
+
+    var upcomingEvents: Event[] = [];
+    var pastEvents: Event[] = [];
+
+    events.map((e) => {
+        var today = new Date();
+
+        if (e.date > today) { // future
+            upcomingEvents.push(e);
+        } else { // past
+            pastEvents.push(e);
+        }
+    })
 
     return (
-        <div id="events" style={{ marginTop: '50px' }}>
-            <h1>Current Events</h1>
+        <div id="events" className={styles.events} style={{ paddingTop: '70px' }}>
+            <h1>Events</h1>
+                <div className={styles.upcoming}>
+                    <h2>Upcoming Events</h2>
+                        {
+                            upcomingEvents.map((e) => 
+                                <EventObject data={e}/>
+                            )
+                        }
+                </div>
 
-            <div className={classNames(styles["event-list"], styles.flex, styles.column)}>
-                {/* {
-                    events && events.filter(e => new Date(e.attributes.endDatetime) > currentDate)
-                        .sort((a, b) => {
-                        return new Date(b.attributes.startDatetime) - new Date(a.attributes.startDatetime)
-                    })
-                        .map((e, i) =>
-                            <Event event={e} key={i} open={i == 0}></Event>
-                        )
-                } */}
-            </div>
+                <div className={styles.past}>
+                    <h2>Past Events</h2>
+                        {
+                            pastEvents.map((e) => 
+                                <EventObject data={e}/>
+                            )
+                        }
+                </div>
 
-            <h1>Past Events</h1>
-
-            <div className={classNames(styles["event-list"], styles.flex, styles.column)}>
-                {/* {
-                    events && events.filter(e => new Date(e.attributes.endDatetime) < currentDate)
-                        .sort((a, b) => {
-                        return new Date(b.attributes.startDatetime) - new Date(a.attributes.startDatetime)
-                    })
-                        .map((e, i) =>
-                            <Event event={e} key={i} open={ false }></Event>
-                        )
-                } */}
-            </div>
         </div>
     );
 }

@@ -1,6 +1,7 @@
 const configs = {
     discord_invite: "https://discord.gg/3efMw45QMN",
     linkedin: "https://www.linkedin.com/company/dsoc",
+    email: "mailto:dsoc@soton.ac.uk",
     twitter: "https://twitter.com/SotonDsoc",
     github: "https://github.com/soton-dsoc",
     api: {

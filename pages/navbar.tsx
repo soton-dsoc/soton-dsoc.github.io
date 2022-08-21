@@ -8,19 +8,26 @@ function Navbar() {
     const [scroll, setScroll] = useState(false);
 
     useEffect(() => {
-        window.onscroll = (e) => { window.scrollY > 10 ? setScroll(true) : setScroll(false) }
+        window.onscroll = (e) => { window.scrollY > 10 ? setScroll(true) : setScroll(false) };
     });
+
+    function scrollToElement(id: string) {
+        document.getElementById(id)?.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
 
     return (
         <div className={styles.Navbar} style={scroll ? { boxShadow: '0px 5px 20px 0px black', backgroundColor: 'rgba(0, 0, 0, 0.25)' } : undefined}>
             <div className={styles['navbar-content-wrapper']}>
                 <div className={styles.left}>
-                    <img src={dsocLogo.src} onClick={ () => window._scrollTo(0) }></img>
+                    <img src={dsocLogo.src} onClick={ () => scrollToElement("home") }></img>
 
                     <div className={styles.pages}>
-                        {/* <div onClick={ () => window._scrollToElement('about') }>About</div>
-                        <div onClick={ () => window._scrollToElement('events') }>Events</div> */}
-                        <div>About</div>
+                        <div onClick={() => scrollToElement("events")}>Events</div>
+                        <div onClick={() => scrollToElement("about")}>About</div>
+                        {/* <div>Events</div>
+                        <div>About</div> */}
                         {/* <div>Contact</div> */}
                     </div>
                 </div>

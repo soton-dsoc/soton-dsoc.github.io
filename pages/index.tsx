@@ -47,8 +47,8 @@ const Index: NextPage = () => {
       <Navbar></Navbar>
       <div className={indexStyles["body-wrapper"]}>
         <Home></Home>
-          <About></About>
-          {/* <Events></Events> */}
+        <Events></Events>
+        <About></About>
       </div>
       <Footer></Footer>
     </div>

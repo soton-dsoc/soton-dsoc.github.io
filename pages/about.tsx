@@ -11,7 +11,9 @@ import audience from '../public/audience.jpg'
 
 import german from '../public/german.jpg';
 import victor from '../public/victor_cropped.jpg';
+import olly from '../public/olly.jpg'
 import dsoc from '../public/dsoc-logo-white.svg'
+import jin from '../public/jin.jpeg'
 
 
 function About() {
@@ -38,7 +40,7 @@ function About() {
         },
         {
             name: "Olly Ferrier",
-            photo: dsoc,
+            photo: olly,
             role: "Events Officer"
         },
         {
@@ -48,7 +50,7 @@ function About() {
         },
         {
             name: "Jin Tanaka",
-            photo: dsoc,
+            photo: jin,
             role: "Graphics Designer"
         },
         {
@@ -64,7 +66,7 @@ function About() {
     ]
 
     return (
-        <div className={styles.about}>
+        <div id="about" style={{ paddingTop: '70px' }} className={styles.about}>
             <h1>About</h1>
 
             <div className={styles["about-container"]}>
@@ -101,7 +103,7 @@ function About() {
 
             <div className={styles.team}>
                 {
-                    team.map((p, i) =>
+                    team.map((p, i) => 
                         <div className={styles["team-card"]} key={i}>
                             <img src={p.photo.src} className={styles["clip-circle"]}></img>
                             <div className={styles["team-card-text"]}>
