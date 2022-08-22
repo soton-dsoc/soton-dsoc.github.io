@@ -14,6 +14,7 @@ import victor from '../public/victor_cropped.jpg';
 import olly from '../public/olly.jpg'
 import dsoc from '../public/dsoc-logo-white.svg'
 import jin from '../public/jin.jpeg'
+import sy from '../public/sy.jpg'
 
 
 function About() {
@@ -22,6 +23,10 @@ function About() {
         name: string;
         photo: StaticImageData;
         role: string;
+        linkedin?: string;
+        twitter?: string;
+        email?: string;
+        discord?: string;
     }[] = [
         {
             name: "German Nikolishin",
@@ -54,6 +59,11 @@ function About() {
             role: "Graphics Designer"
         },
         {
+            name: "Saarujan Yogeswaran",
+            photo: sy,
+            role: "Graphics Designer"
+        },
+        {
             name: "Fernando del Aguila",
             photo: dsoc,
             role: "DeFi & Blockchain Lead"
@@ -66,7 +76,7 @@ function About() {
     ]
 
     return (
-        <div id="about" style={{ paddingTop: '70px' }} className={styles.about}>
+        <div id="about" style={{ paddingTop: '80px' }} className={styles.about}>
             <h1>About</h1>
 
             <div className={styles["about-container"]}>
@@ -84,11 +94,11 @@ function About() {
                         </p>
                     </div>
 
-                    <img src={dsocEvent.src} style={{ height:"350px", borderRadius:"25px" }}/>
+                    <img src={dsocEvent.src} style={{ height:"270px", borderRadius:"25px" }}/>
                 </div>
 
                 <div className={styles["lower-container"]}>
-                    <img src={audience.src} style={{ height:"350px", borderRadius:"25px" }}/>
+                    <img src={audience.src} style={{ height:"280px", borderRadius:"25px" }}/>
 
                     <div className={styles["about-text"]}>
                         <p>

@@ -20,7 +20,7 @@
     align-items: center;
 }
 
-.team {
+/* .team {
     margin-top: 50px;
     margin-bottom: 100px;
     display: grid;
@@ -28,42 +28,52 @@
     grid-template-rows: repeat(2, 1fr);
     column-gap: 50px;
     row-gap: 50px
+} */
+
+.team {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 220px);
+    gap: 40px;
 }
 
 .team-card {
-    /* background: linear-gradient(-45deg, #1a1a1a, #161616); */
+    width: 220px;
+    height: 220px;
     background-color: rgba(255, 255, 255, 0.05);
     padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
 }
 
 .team-card > img {
-    margin-top: 20px;
-    height: 200px;
+    margin-top: 10px;
+    height: 100px;
 }
 
 .clip-circle  {
-    clip-path: circle(100px at center);
+    clip-path: circle(50px at center);
 }
 
 .team-card-text {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 8px;
     align-items: center;
 }
 
 .team-card-name {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .team-card-role {
-    font-size: 16px;
+    font-size: 11px;
 }
 
 @media screen and (max-width: 1000px) {

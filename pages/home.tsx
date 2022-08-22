@@ -14,7 +14,7 @@ function Home() {
 
                 let scrollValue = window.scrollY;
                 if (homeDiv) {
-                    let scaleValue = Math.max(1, 0.9 + scrollValue / 1000);
+                    let scaleValue = Math.max(1, 1 + scrollValue / 1000);
                     let blurValue = 0;
 
                     if (scaleValue > 1.7) {
