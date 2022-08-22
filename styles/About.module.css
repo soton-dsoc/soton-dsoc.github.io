@@ -82,10 +82,12 @@
 
 .fcBack {
     padding: 10px;
-    background-color: #ffffff;
-    color: black;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #313131;
     transform: rotateY(180deg);
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .hashGrid {
