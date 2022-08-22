@@ -7,31 +7,32 @@ import { homedir } from 'os';
 function Home() {
     
     if (typeof window !== "undefined") {
-        let homeDiv = document.getElementById("home");
+        if (screen.width > 1000) {
+            let homeDiv = document.getElementById("home");
 
-        window.addEventListener('scroll', () => {
+            window.addEventListener('scroll', () => {
 
-            let scrollValue = window.scrollY;
-            if (homeDiv) {
-                let scaleValue = Math.max(1, 0.9 + scrollValue / 1000);
-                let blurValue = 0;
+                let scrollValue = window.scrollY;
+                if (homeDiv) {
+                    let scaleValue = Math.max(1, 0.9 + scrollValue / 1000);
+                    let blurValue = 0;
 
-                if (scaleValue > 1.7) {
-                    homeDiv.style.visibility = "hidden";
-                } else {
-                    homeDiv.style.visibility = "visible";
+                    if (scaleValue > 1.7) {
+                        homeDiv.style.visibility = "hidden";
+                    } else {
+                        homeDiv.style.visibility = "visible";
+                    }
+
+                    if (scrollValue > 100) {
+                        blurValue = scrollValue / 150;
+                    }
+
+                    homeDiv.style.transform = `scale(${scaleValue})`;
+                    homeDiv.style.filter = `blur(${blurValue}px)`;
+                    console.log(scaleValue);
                 }
-
-                if (scrollValue > 100) {
-                    blurValue = scrollValue / 150;
-                }
-
-                // if (blurValue < )
-                homeDiv.style.transform = `scale(${scaleValue})`;
-                homeDiv.style.filter = `blur(${blurValue}px)`;
-                console.log(scaleValue);
-            }
-        })
+            })
+        }
     }
 
     return (

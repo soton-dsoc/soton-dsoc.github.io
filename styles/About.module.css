@@ -67,16 +67,6 @@
 }
 
 @media screen and (max-width: 1000px) {
-    /* .team {
-        display: flex;
-        flex-direction: column;
-    } */
-
-    /* .team-card {
-        min-width: initial;
-        max-width: 100%;
-        padding: 15px;
-    } */
 
     .about-text {
         font-size: 14px;
@@ -86,19 +76,7 @@
         border-radius: 10px;
 
     }
-
-    /* .team-card-text {
-        margin-left: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .team-card-name {
-        font-weight: 700;
-        font-size: 20px;
-        margin-bottom: 10px;
-    } */
-
+    
     .spacer {
         height: 50px;
     }

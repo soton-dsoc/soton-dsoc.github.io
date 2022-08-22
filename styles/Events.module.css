@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .event-body-wrapper {
+    /* .event-body-wrapper {
         padding: 30px 20px;
     }
 
@@ -34,5 +34,9 @@
 
     .event-container {
         margin-bottom: 40px;
+    } */
+
+    .events {
+        gap: 0px;
     }
 }

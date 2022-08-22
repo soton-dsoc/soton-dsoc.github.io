@@ -19,23 +19,20 @@ function Navbar() {
 
     return (
         <div className={styles.Navbar} style={scroll ? { boxShadow: '0px 5px 20px 0px black', backgroundColor: 'rgba(0, 0, 0, 0.25)' } : undefined}>
-            <div className={styles['navbar-content-wrapper']}>
-                <div className={styles.left}>
-                    <img src={dsocLogo.src} onClick={ () => scrollToElement("home") }></img>
+                <div className={styles.contentWrapper}>
+                    <div className={styles.left}>
+                        <img src={dsocLogo.src} onClick={ () => scrollToElement("home") }></img>
 
-                    <div className={styles.pages}>
-                        <div onClick={() => scrollToElement("events")}>Events</div>
-                        <div onClick={() => scrollToElement("about")}>About</div>
-                        {/* <div>Events</div>
-                        <div>About</div> */}
-                        {/* <div>Contact</div> */}
+                        <div className={styles.pages}>
+                            <div onClick={ () => scrollToElement("events") }>Events</div>
+                            <div onClick={ () => scrollToElement("about") }>About</div>
+                        </div>
+                    </div>
+
+                    <div className={styles.right}>
+                        <img src={uosLogo.src}></img>
                     </div>
                 </div>
-
-                <div className={styles.right}>
-                    <img src={uosLogo.src}></img>
-                </div>
-            </div>
         </div>
     )
 }
