@@ -14,11 +14,13 @@ import victor from '../public/victor_cropped.jpg';
 import olly from '../public/olly.jpg'
 import dsoc from '../public/dsoc-logo-white.svg'
 import jin from '../public/jin.jpeg'
+import jj from '../public/jj.jpg'
 import sy from '../public/sy.jpg'
 
 
 function About() {
 
+    // TODO: display (a portion of) hash checksum in the back of the card
     const team: {
         name: string;
         photo: StaticImageData;
@@ -50,7 +52,7 @@ function About() {
         },
         {
             name: "Jie-Jie Chan",
-            photo: dsoc,
+            photo: jj,
             role: "DeFi Officer"
         },
         {

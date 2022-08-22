@@ -14,11 +14,6 @@ function Events() {
         media?: StaticImageData[]
     }
 
-    function determineSection(date: Date) {
-        var today = new Date()
-        return date > today ? "upcoming" : "past"
-    }
-
     const events: Event[] = [
         {
             title: "Big Event",
