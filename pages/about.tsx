@@ -1,6 +1,7 @@
 import styles from '../styles/About.module.css'
 import classnames from 'classnames'
 import React from 'react';
+import cryptoModule from 'crypto';
 
 // import './About.css';
 import { Button } from '@mantine/core';
@@ -20,8 +21,7 @@ import sy from '../public/sy.jpg'
 
 function About() {
 
-    // TODO: display (a portion of) hash checksum in the back of the card
-    const team: {
+    type Person = {
         name: string;
         photo: StaticImageData;
         role: string;
@@ -29,7 +29,10 @@ function About() {
         twitter?: string;
         email?: string;
         discord?: string;
-    }[] = [
+    }
+
+    // TODO: display (a portion of) hash checksum in the back of the card
+    const team: Person[] = [
         {
             name: "German Nikolishin",
             photo: german,
@@ -77,6 +80,30 @@ function About() {
         },
     ]
 
+    function hex(buffer: Buffer) {
+        var hexCodes = [];
+        var view = new DataView(buffer);
+        for (var i = 0; i < view.byteLength; i += 4) {
+          // Using getUint32 reduces the number of iterations needed (we process 4 bytes each time)
+          var value = view.getUint32(i)
+          // toString(16) will give the hex representation of the number without padding
+          var stringValue = value.toString(16)
+          // We use concatenation and slice for padding
+          var padding = '00000000'
+          var paddedValue = (padding + stringValue).slice(-padding.length)
+          hexCodes.push(paddedValue);
+        }
+      
+        // Join all the hex strings into one
+        return hexCodes.join("");
+      }
+
+    function calculateHash(p: Person): string {
+        var s: string = `${p.name} ${p.photo.toString()} ${p.role} ${p.linkedin} ${p.twitter} ${p.email} ${p.discord}`;
+        var hash: string = cryptoModule.createHash('sha256').update(s).digest("hex");
+        return hash;
+    }
+
     return (
         <div id="about" style={{ paddingTop: '80px' }} className={styles.about}>
             <h1>About</h1>
@@ -123,11 +150,27 @@ function About() {
             <div className={styles.team}>
                 {
                     team.map((p, i) => 
-                        <div className={styles["team-card"]} key={i}>
-                            <img src={p.photo.src} className={styles["clip-circle"]}></img>
-                            <div className={styles["team-card-text"]}>
-                                <div className={styles["team-card-name"]}>{p.name}</div>
-                                <div className={styles['team-card-role']}>{p.role}</div>
+                        <div className={styles.flipCard} key={i}>
+                            <div className={styles.fcInner}>
+                                <div className={styles.fcFront}>
+                                    <img src={p.photo.src} className={styles["clip-circle"]}></img>
+                                    <div className={styles["team-card-text"]}>
+                                        <div className={styles["team-card-name"]}>{p.name}</div>
+                                        <div className={styles['team-card-role']}>{p.role}</div>
+                                    </div>
+                                </div>
+                                <div className={styles.fcBack}>
+                                    <div className={styles.hashGrid}>
+                                        {
+                                            calculateHash(p).split("").map((c) =>
+                                                <div className={styles.char}>{c}</div>
+                                            )
+                                        }
+                                    </div>
+                                    
+                                    <div className={styles.socialMedia}>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     )
