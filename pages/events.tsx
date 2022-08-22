@@ -1,11 +1,8 @@
-import axios from 'axios';
 import { useEffect, useState } from 'react';
 import styles from '../styles/Events.module.css';
-// import Event from './event/Event.js'
-import configs from '../config';
-import classNames from 'classnames';
-import { ColorFormat } from '@mantine/core/lib/components/ColorPicker/types';
+
 import EventObject from './EventObject';
+import { StaticImageData } from 'next/image';
 
 function Events() {
 
@@ -14,6 +11,7 @@ function Events() {
         date: Date,
         description: string,
         colour: string,
+        media?: StaticImageData[]
     }
 
     function determineSection(date: Date) {
@@ -26,13 +24,25 @@ function Events() {
             title: "Big Event",
             date: new Date("2022-10-31T22:00:00"),
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            colour: "#050433"
+            colour: "#44bd32"
         },
         {
             title: "Best Event Ever",
             date: new Date("2020-11-15T20:30:00"),
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            colour: "#f405d3"
+            colour: "#8c7ae6"
+        },
+        {
+            title: "Huge Event",
+            date: new Date("2024-11-15T20:30:00"),
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            colour: "#e84118"
+        },
+        {
+            title: "An Event You Cannot miss",
+            date: new Date("2019-11-15T20:30:00"),
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            colour: "#273c75"
         }
     ]
 

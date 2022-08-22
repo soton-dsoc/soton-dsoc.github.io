@@ -4,7 +4,7 @@ function EventObject(props: any) {
     return(
     <div className={styles.event} style={{ backgroundColor: `${props.data.colour}`}}>
         <div className={styles.title}>{props.data.title}</div>
-        <div>{props.data.date.toLocaleString()}</div>
+        <div>{props.data.date.toUTCString()}</div>
         <div>{props.data.description}</div>
     </div>
     )

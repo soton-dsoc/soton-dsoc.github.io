@@ -1,11 +1,13 @@
 .events {
     display: flex;
     flex-direction: column;
+    gap: 50px;
 }
 
 .upcoming, .past {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 @media screen and (max-width: 1000px) {
