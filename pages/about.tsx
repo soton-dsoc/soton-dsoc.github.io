@@ -1,7 +1,8 @@
 import styles from '../styles/About.module.css'
 import classnames from 'classnames'
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import cryptoModule from 'crypto';
+import VanillaTilt from 'vanilla-tilt';
 
 // import './About.css';
 import { Button } from '@mantine/core';
@@ -18,6 +19,16 @@ import jin from '../public/jin.jpeg'
 import jj from '../public/jj.jpg'
 import sy from '../public/sy.jpg'
 
+function Tilt(props: any) {
+    const { options, ...rest } = props;
+    const tilt = useRef(null);
+  
+    useEffect(() => {
+      VanillaTilt.init(tilt.current as any, options);
+    }, [options]);
+  
+    return <div ref={tilt} {...rest} />;
+}
 
 function About() {
 
@@ -31,52 +42,82 @@ function About() {
         discord?: string;
     }
 
+      /* 
+  {
+    reverse:           false,  // reverse the tilt direction
+    max:               35,     // max tilt rotation (degrees)
+    perspective:       1000,   // Transform perspective, the lower the more extreme the tilt gets.
+    scale:             1,      // 2 = 200%, 1.5 = 150%, etc..
+    speed:             300,    // Speed of the enter/exit transition
+    transition:        true,   // Set a transition on enter/exit.
+    axis:              null,   // What axis should be disabled. Can be X or Y.
+    reset:             true,   // If the tilt effect has to be reset on exit.
+    easing:            "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+    glare:             false,   // if it should have a "glare" effect
+    "max-glare":       1,      // the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
+    "glare-prerender": false   // false = VanillaTilt creates the glare elements for you, otherwise
+                               // you need to add .js-tilt-glare>.js-tilt-glare-inner by yourself
+} */
+    const options = {
+        speed: 1000,
+        max: 15,
+    };
+
     // TODO: display (a portion of) hash checksum in the back of the card
     const team: Person[] = [
         {
             name: "German Nikolishin",
             photo: german,
-            role: "President"
+            role: "President",
+            linkedin: "https://www.linkedin.com/in/skymanone/"
         },
         {
             name: "Victor Gabaldon",
             photo: victor,
-            role: "Vice President"
+            role: "Vice President",
+            linkedin: "https://www.linkedin.com/in/victor-gabaldon/"
         },
         {
             name: "James Tidbury",
             photo: dsoc,
-            role: "Financial Officer"
+            role: "Financial Officer",
+            linkedin: "https://www.linkedin.com/in/james-tidbury-b63b81227/"
         },
         {
             name: "Olly Ferrier",
             photo: olly,
-            role: "Events Officer"
+            role: "Events Officer",
+            linkedin: "https://www.linkedin.com/in/oliver-f-83123a178/"
         },
         {
             name: "Jie-Jie Chan",
             photo: jj,
-            role: "DeFi Officer"
+            role: "DeFi Officer",
+            linkedin: "https://www.linkedin.com/in/jia-jie-chen-003886207/"
         },
         {
             name: "Jin Tanaka",
             photo: jin,
-            role: "Graphics Designer"
+            role: "Graphics Designer",
+            linkedin: "https://www.linkedin.com/in/jin-tanaka-4013a01b9/"
         },
         {
             name: "Saarujan Yogeswaran",
             photo: sy,
-            role: "Graphics Designer"
+            role: "Graphics Designer",
+            linkedin: "https://www.linkedin.com/in/saarujan/"
         },
         {
             name: "Fernando del Aguila",
             photo: dsoc,
-            role: "DeFi & Blockchain Lead"
+            role: "DeFi & Blockchain Lead",
+            linkedin: "https://www.linkedin.com/in/fdar/"
         },
         {
             name: "Otmane Yessouf",
             photo: dsoc,
-            role: "Marketing Officer"
+            role: "Marketing Officer",
+            linkedin: "https://www.linkedin.com/in/otmaneyessouf/"
         },
     ]
 
@@ -150,7 +191,8 @@ function About() {
             <div className={styles.team}>
                 {
                     team.map((p, i) => 
-                        <div className={styles.flipCard} key={i}>
+                    <Tilt className="box" options={options}>
+                        <div className={styles.flipCard} key={i} onClick={() => window.open(p.linkedin)}>
                             <div className={styles.fcInner}>
                                 <div className={styles.fcFront}>
                                     <img src={p.photo.src} className={styles["clip-circle"]}></img>
@@ -173,6 +215,7 @@ function About() {
                                 </div>
                             </div>
                         </div>
+                    </Tilt>
                     )
                 }
             </div>
