@@ -18,6 +18,7 @@ import dsoc from '../public/dsoc-logo-white.svg'
 import jin from '../public/jin.jpeg'
 import jj from '../public/jj.jpg'
 import sy from '../public/sy.jpg'
+import ot from '../public/ot.jpeg'
 
 function Tilt(props: any) {
     const { options, ...rest } = props;
@@ -115,7 +116,7 @@ function About() {
         },
         {
             name: "Otmane Yessouf",
-            photo: dsoc,
+            photo: ot,
             role: "Marketing Officer",
             linkedin: "https://www.linkedin.com/in/otmaneyessouf/"
         },
