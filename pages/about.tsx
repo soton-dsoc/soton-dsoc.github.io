@@ -165,11 +165,11 @@ function About() {
                         </p>
                     </div>
 
-                    <img src={dsocEvent.src} style={{ height:"270px", borderRadius:"25px" }}/>
+                    <img src={dsocEvent.src} className={styles.upperImg}/>
                 </div>
 
                 <div className={styles["lower-container"]}>
-                    <img src={audience.src} style={{ height:"280px", borderRadius:"25px" }}/>
+                    <img src={audience.src} className={styles.lowerImg}/>
 
                     <div className={styles["about-text"]}>
                         <p>

@@ -14,7 +14,7 @@ function Home() {
 
                 let scrollValue = window.scrollY;
                 if (homeDiv) {
-                    let scaleValue = Math.max(1, 1 + scrollValue / 1000);
+                    let scaleValue = Math.max(1, 0.8 + scrollValue / 1000);
                     let blurValue = 0;
 
                     if (scaleValue > 1.7) {
@@ -37,42 +37,40 @@ function Home() {
 
     return (
         <div id="home" className={styles.home}>
-            {/* <div className={styles["home-inner"]}> */}
-                <div className={classnames(styles["home-block"], styles["home-block-title"])}>
-                    <div>
-                        <div id={styles.subtitle}>
-                            We are the
-                        </div>
-                        <div id={styles.title}>
-                            Decentralised <br></br>
-                            Society
-                        </div>
+            <div className={classnames(styles["home-block"], styles["home-block-title"])}>
+                <div>
+                    <div id={styles.subtitle}>
+                        We are the
+                    </div>
+                    <div id={styles.title}>
+                        Decentralised <br></br>
+                        Society
                     </div>
                 </div>
+            </div>
 
-                <div className={classnames(styles["home-block"], styles["home-block-cta"])}>
-                    <div className={styles["button-wrapper"]}>
-                        <a href={configs.discord_invite} target="_blank">
-                            <div className={classnames(styles["home-button"], styles["home-button-join"])}>
-                                Join us
-                                <img src={discordLogo.src} style={{ height: '20px', marginLeft: '10px' }}/>
-                            </div>
-                        </a>
+            <div className={classnames(styles["home-block"], styles["home-block-cta"])}>
+                <div className={styles["button-wrapper"]}>
+                    <a href={configs.discord_invite} target="_blank">
+                        <div className={classnames(styles["home-button"], styles["home-button-join"])}>
+                            Join us
+                            <img src={discordLogo.src} style={{ height: '20px', marginLeft: '10px' }}/>
+                        </div>
+                    </a>
 
-                        <a className={styles["home-button-whatson"]} style={{display: 'grid'}}>
-                            <div style={{ gridArea: '1 / 1 / 4 / 2', backgroundColor: '#0066FF', borderTopLeftRadius: '5px', borderBottomLeftRadius: '5px' }}></div>
-                            <div style={{ gridArea: '1 / 2 / 2 / 3', background: 'linear-gradient(90deg, #0066FF, #9000A8)' }}></div>
+                    <a className={styles["home-button-whatson"]} style={{display: 'grid'}}>
+                        <div style={{ gridArea: '1 / 1 / 4 / 2', backgroundColor: '#0066FF', borderTopLeftRadius: '5px', borderBottomLeftRadius: '5px' }}></div>
+                        <div style={{ gridArea: '1 / 2 / 2 / 3', background: 'linear-gradient(90deg, #0066FF, #9000A8)' }}></div>
 
-                            <div style={{ gridArea: '2 / 2 / 3 / 3', padding: '5px 0', textAlign: 'center', backgroundColor: 'rgba(0,0,0,0.2)' }}>
-                                What's on
-                            </div>
+                        <div style={{ gridArea: '2 / 2 / 3 / 3', padding: '5px 0', textAlign: 'center', backgroundColor: 'rgba(0,0,0,0.2)' }}>
+                            What's on
+                        </div>
 
-                            <div style={{ gridArea: '1 / 3 / 4 / 4', backgroundColor: '#9000A8', borderTopRightRadius: '5px', borderBottomRightRadius: '5px' }}></div>
-                            <div style={{ gridArea: '3 / 2 / 4 / 3', background: 'linear-gradient(90deg, #0066FF, #9000A8)' }}></div>
-                        </a>
-                    </div>
+                        <div style={{ gridArea: '1 / 3 / 4 / 4', backgroundColor: '#9000A8', borderTopRightRadius: '5px', borderBottomRightRadius: '5px' }}></div>
+                        <div style={{ gridArea: '3 / 2 / 4 / 3', background: 'linear-gradient(90deg, #0066FF, #9000A8)' }}></div>
+                    </a>
                 </div>
-            {/* </div> */}
+            </div>
         </div>
     );
 }

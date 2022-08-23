@@ -7,33 +7,8 @@ import About from './about'
 import Events from './events'
 
 
-import Image from 'next/image'
 import indexStyles from '../styles/Index.module.css'
-import { useState } from 'react'
-import SmoothScroll from 'smooth-scroll'
 import Footer from './footer'
-// import { Navbar } from '@mantine/core'
-
-// const smoothScroll = new SmoothScroll();
-
-// window.smoothScroll = smoothScroll;
-
-// const scrollTo = (val: any) => {
-//   smoothScroll.animateScroll(val);
-// }
-
-// window._scrollTo = (val: any) => {
-//   smoothScroll.animateScroll(val);
-// }
-
-// window._scrollToElement = (el: string) => {
-//   const element: HTMLElement | null = document.getElementById(el);
-
-//   if (element) {
-//     scrollTo(element.getBoundingClientRect().top - window.innerHeight / 8 + window.scrollY)
-//   }
-// }
-
 
 const Index: NextPage = () => {
   return (

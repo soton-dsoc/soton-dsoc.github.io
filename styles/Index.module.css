@@ -10,7 +10,7 @@ a:visited {
     cursor: auto;
 } */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
 
 .container {
   margin: 0;
@@ -22,6 +22,16 @@ a:visited {
   font-weight: 300;
   background: linear-gradient(to right top, #010101, #424242);
   color-scheme: 'dark';
+}
+
+.bodyWrapper {
+  max-width: 1500px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .flex {
@@ -61,22 +71,15 @@ a:visited {
   margin-right: auto;
 }
 
-.bodyWrapper {
-  max-width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  /* gap: 100px; */
-}
-
 @media screen and (max-width: 1000px) {
   .spacer {
     height: 20px;
   }
 
   .bodyWrapper {
-    margin-left: 25px;
-    margin-right: 25px;
+    padding: 0px 8vw;
+    display: flex;
+    flex-direction: column;
   }
+  
 }

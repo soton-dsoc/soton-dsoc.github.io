@@ -29,7 +29,7 @@ function Navbar() {
                         </div>
                     </div>
 
-                    <div className={styles.right}>
+                    <div className={styles.right} onClick={ () => window.open("https://www.southampton.ac.uk/")}>
                         <img src={uosLogo.src}></img>
                     </div>
                 </div>
