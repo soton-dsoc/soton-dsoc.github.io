@@ -26,6 +26,7 @@ function Navbar() {
                         <div className={styles.pages}>
                             <div onClick={ () => scrollToElement("events") }>Events</div>
                             <div onClick={ () => scrollToElement("about") }>About</div>
+                            <div onClick={ () => window.open("https://dsoc.substack.com/")} style={{marginLeft: "35px"}}>Newsletter</div>
                         </div>
                     </div>
 
