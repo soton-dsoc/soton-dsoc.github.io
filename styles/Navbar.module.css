@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     right: 0;
-    padding: 15px 40px 15px 40px;
+    padding: 20px 40px 20px 40px;
 
     background-color: rgba(0, 0, 0, 0);
     backdrop-filter: blur(7px);
@@ -27,7 +27,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 1280px;
+    /* max-width: 1280px; */
 }
 
 .left {
@@ -46,6 +46,17 @@
     /* opacity: 0.5; */
     cursor: pointer;
 }
+.pages {
+    color: white;
+    display: flex;
+    margin-left: 20px;
+}
+
+.pages > div {
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 1000px)  {
     .right > img {
@@ -59,16 +70,4 @@
     .contentWrapper {
         margin: 10px 25px 10px;
     }
-}
-
-.pages {
-    color: white;
-    display: flex;
-    margin-left: 20px;
-}
-
-.pages > div {
-    margin-left: 10px;
-    margin-right: 10px;
-    cursor: pointer;
 }

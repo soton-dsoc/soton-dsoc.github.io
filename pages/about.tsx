@@ -1,11 +1,8 @@
 import styles from '../styles/About.module.css'
-import classnames from 'classnames'
 import React, { useEffect, useRef } from 'react';
 import cryptoModule from 'crypto';
 import VanillaTilt from 'vanilla-tilt';
 
-// import './About.css';
-import { Button } from '@mantine/core';
 import { StaticImageData } from 'next/image';
 
 import dsocEvent from '../public/dsoc-event.jpg'
@@ -122,24 +119,6 @@ function About() {
         },
     ]
 
-    function hex(buffer: Buffer) {
-        var hexCodes = [];
-        var view = new DataView(buffer);
-        for (var i = 0; i < view.byteLength; i += 4) {
-          // Using getUint32 reduces the number of iterations needed (we process 4 bytes each time)
-          var value = view.getUint32(i)
-          // toString(16) will give the hex representation of the number without padding
-          var stringValue = value.toString(16)
-          // We use concatenation and slice for padding
-          var padding = '00000000'
-          var paddedValue = (padding + stringValue).slice(-padding.length)
-          hexCodes.push(paddedValue);
-        }
-      
-        // Join all the hex strings into one
-        return hexCodes.join("");
-      }
-
     function calculateHash(p: Person): string {
         var s: string = `${p.name} ${p.photo.toString()} ${p.role} ${p.linkedin} ${p.twitter} ${p.email} ${p.discord}`;
         var hash: string = cryptoModule.createHash('sha256').update(s).digest("hex");
@@ -150,9 +129,9 @@ function About() {
         <div id="about" style={{ paddingTop: '80px' }} className={styles.about}>
             <h1>About</h1>
 
-            <div className={styles["about-container"]}>
-                <div className={styles["upper-container"]}>
-                    <div className={styles["about-text"]}>
+            <div className={styles.aboutContainer}>
+                <div className={styles.upperContainer}>
+                    <div className={styles.aboutText}>
                         <p>
                             Established in September 2021, the University of Southampton Decentralised Society (commonly known as dSoc) was founded with the purpose of exploring and educating other students in the field of decentralisation, building a community to discuss new ideas, and creating an environment to pursue successful projects related to Web3.
                         </p>
@@ -168,10 +147,10 @@ function About() {
                     <img src={dsocEvent.src} className={styles.upperImg}/>
                 </div>
 
-                <div className={styles["lower-container"]}>
+                <div className={styles.lowerContainer}>
                     <img src={audience.src} className={styles.lowerImg}/>
 
-                    <div className={styles["about-text"]}>
+                    <div className={styles.aboutText}>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         </p>
@@ -196,10 +175,10 @@ function About() {
                         <div className={styles.flipCard} key={i} onClick={() => window.open(p.linkedin)}>
                             <div className={styles.fcInner}>
                                 <div className={styles.fcFront}>
-                                    <img src={p.photo.src} className={styles["clip-circle"]}></img>
-                                    <div className={styles["team-card-text"]}>
-                                        <div className={styles["team-card-name"]}>{p.name}</div>
-                                        <div className={styles['team-card-role']}>{p.role}</div>
+                                    <img src={p.photo.src} className={styles.clipCircle}></img>
+                                    <div className={styles.teamCardText}>
+                                        <div className={styles.teamCardName}>{p.name}</div>
+                                        <div className={styles.teamCardRole}>{p.role}</div>
                                     </div>
                                 </div>
                                 <div className={styles.fcBack}>

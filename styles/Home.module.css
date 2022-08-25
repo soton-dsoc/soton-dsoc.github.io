@@ -6,28 +6,28 @@
     overflow-x: hidden;
 }
 
-.home-block {
+.homeBlockText {
     flex: 1;
     display: flex; 
     align-items: center;
-}
-
-.home-block-title {
     justify-content: center;
 }
 
-.home-block-cta {
+.homeBlockBtns {
+    flex: 1;
+    display: flex; 
+    align-items: center;
     justify-content: center;
 }
 
-.button-wrapper {
+.buttonWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.home-button {
+.homeBtnJoin {
     border-radius: 5px;
     padding-left: 70px;
     padding-right: 70px;
@@ -40,10 +40,7 @@
     cursor: pointer;
     user-select: none;
     /* box-shadow: ; */
-}
 
-
-.home-button-join {
     transition: all 1s;
     background: linear-gradient(90deg, #9000A8, #0066FF);
     display: flex;
@@ -53,11 +50,11 @@
     transition: all .4s ease-in-out;
 }
 
-.home-button-join:hover {
+.homeBtnJoin:hover {
     background-position: 100% 0;
 }
 
-.home-button-whatson {
+.homeBtnWhatsOn {
     font-weight: 800;
     font-size: 25px;
     margin-top: 10px;
@@ -72,51 +69,16 @@
     color: white;
 }
 
-.home-button-whatson:hover {
+.homeBtnWhatsOn:hover {
     width: 110%;
 }
 
-
 #title {
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 700;
 }
 
 #subtitle {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 300;
-}
-
-.round-corners {
-    border-radius: 50px;
-}
-
-@media screen and (max-width: 1000px) {
-    #title {
-        font-size: 10vw;
-    }
-
-    #subtitle {
-        font-size: 5vw;
-    }
-
-    .home-button {
-        font-size: 20px;
-    }
-    
-    .home-button-whatson {
-        font-size: 20px;
-    }
-
-    .home {
-        flex-direction: column;
-    }
-
-    .home-block-title {
-        flex: 1.5;
-    }
-
-    .home-block-cta {
-        justify-content: center;
-    }
 }

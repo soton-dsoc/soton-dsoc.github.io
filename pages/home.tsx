@@ -2,7 +2,6 @@ import configs from '../config'
 import styles from '../styles/Home.module.css'
 import discordLogo from '../public/discord-logo.svg'
 import classnames from 'classnames';
-import { homedir } from 'os';
 
 function Home() {
     
@@ -37,7 +36,7 @@ function Home() {
 
     return (
         <div id="home" className={styles.home}>
-            <div className={classnames(styles["home-block"], styles["home-block-title"])}>
+            <div className={styles.homeBlockText}>
                 <div>
                     <div id={styles.subtitle}>
                         We are the
@@ -49,16 +48,16 @@ function Home() {
                 </div>
             </div>
 
-            <div className={classnames(styles["home-block"], styles["home-block-cta"])}>
-                <div className={styles["button-wrapper"]}>
+            <div className={styles.homeBlockBtns}>
+                <div className={styles.buttonWrapper}>
                     <a href={configs.discord_invite} target="_blank">
-                        <div className={classnames(styles["home-button"], styles["home-button-join"])}>
+                        <div className={styles.homeBtnJoin}>
                             Join us
                             <img src={discordLogo.src} style={{ height: '20px', marginLeft: '10px' }}/>
                         </div>
                     </a>
 
-                    <a className={styles["home-button-whatson"]} style={{display: 'grid'}}>
+                    <a className={styles.homeBtnWhatsOn} style={{display: 'grid'}}>
                         <div style={{ gridArea: '1 / 1 / 4 / 2', backgroundColor: '#0066FF', borderTopLeftRadius: '5px', borderBottomLeftRadius: '5px' }}></div>
                         <div style={{ gridArea: '1 / 2 / 2 / 3', background: 'linear-gradient(90deg, #0066FF, #9000A8)' }}></div>
 

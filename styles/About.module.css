@@ -1,19 +1,11 @@
-.about p {
-    text-align: left;
-}
-
-.about-text {
-    font-size: 18px;
-}
-
-.about-container {
+.aboutContainer {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
     margin-bottom: 80px;
 }
 
-.upper-container, .lower-container {
+.upperContainer, .lowerContainer {
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -21,11 +13,11 @@
 }
 
 .upperImg {
-    height: 280px;
+    height: 300px;
 }
 
 .lowerImg {
-    height: 270px;
+    height: 280px;
 }
 
 .upperImg, .lowerImg {
@@ -109,56 +101,22 @@
     height: 100px;
 }
 
-.clip-circle  {
+.clipCircle  {
     clip-path: circle(50px at center);
 }
 
-.team-card-text {
+.teamCardText {
     display: flex;
     flex-direction: column;
     gap: 8px;
     align-items: center;
 }
 
-.team-card-name {
+.teamCardName {
     font-weight: 700;
     font-size: 15px;
 }
 
-.team-card-role {
+.teamCardRole {
     font-size: 11px;
-}
-
-@media (max-width: 1200px) {
-
-    .about-text {
-        font-size: 14px;
-    }
-
-    .about-container {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        /* margin-bottom: 80px; */
-    }
-
-    .upper-container, .lower-container {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-    }
-
-    .lower-container {
-        flex-direction: column-reverse;
-    }
-
-    .upperImg, .lowerImg {
-        width: 100vw;
-        height: auto;
-        padding-left: 50px;
-        padding-right: 50px;
-        border-radius: 0px;
-    }
-
 }
