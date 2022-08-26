@@ -1,7 +1,6 @@
 import configs from '../config'
 import styles from '../styles/Home.module.css'
 import discordLogo from '../public/discord-logo.svg'
-import classnames from 'classnames';
 
 function Home() {
     
@@ -53,7 +52,7 @@ function Home() {
                     <a href={configs.discord_invite} target="_blank">
                         <div className={styles.homeBtnJoin}>
                             Join us
-                            <img src={discordLogo.src} style={{ height: '20px', marginLeft: '10px' }}/>
+                            <img src={discordLogo.src} className={styles.discordLogo}/>
                         </div>
                     </a>
 

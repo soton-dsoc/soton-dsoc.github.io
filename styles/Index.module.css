@@ -90,16 +90,3 @@ a:visited {
 .topBtn:hover {
   background-color: #555;
 } */
-
-@media screen and (max-width: 1000px) {
-  .spacer {
-    height: 20px;
-  }
-
-  .bodyWrapper {
-    padding: 0px 8vw;
-    display: flex;
-    flex-direction: column;
-  }
-  
-}

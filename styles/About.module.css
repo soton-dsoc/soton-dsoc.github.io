@@ -8,7 +8,7 @@
 .upperContainer, .lowerContainer {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 40px;
     align-items: center;
 }
 
@@ -119,4 +119,26 @@
 
 .teamCardRole {
     font-size: 11px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .upperImg {
+        height: 27vw;
+    }
+
+    .lowerImg {
+        height: 25vw;
+    }
+
+    .aboutContainer {
+        gap: 1vw;
+    }
+
+    .upperContainer, .lowerContainer {
+        gap: 4vw;
+    }
+
+    .team {
+        /* width: 100%; */
+    }
 }

@@ -4,20 +4,22 @@
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .homeBlockText {
     flex: 1;
     display: flex; 
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .homeBlockBtns {
     flex: 1;
     display: flex; 
     align-items: center;
-    justify-content: center;
+    justify-content: right;
 }
 
 .buttonWrapper {
@@ -25,23 +27,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 25px;
 }
 
 .homeBtnJoin {
     border-radius: 5px;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 70px 10px 70px;
     font-weight: 800;
-    font-size: 25px;
+    /* font-size: 25px; */
     margin-top: 10px;
     margin-bottom: 10px;
     cursor: pointer;
     user-select: none;
     /* box-shadow: ; */
 
-    transition: all 1s;
+    transition: hover 1s;
     background: linear-gradient(90deg, #9000A8, #0066FF);
     display: flex;
     align-items: center;
@@ -54,9 +54,15 @@
     background-position: 100% 0;
 }
 
+.discordLogo {
+    height: 25px;
+    margin-left: 20px;
+}
+
+/* Since it has "width: 100%" we control it from the join button */
 .homeBtnWhatsOn {
     font-weight: 800;
-    font-size: 25px;
+    /* font-size: 25px; */
     margin-top: 10px;
     margin-bottom: 10px;
     cursor: pointer;
@@ -81,4 +87,28 @@
 #subtitle {
     font-size: 35px;
     font-weight: 300;
+}
+
+@media only screen and (max-width: 1280px) {
+    #title {
+        font-size: 5.5vw;
+    }
+
+    #subtitle {
+        font-size: 2.75vw;
+    }
+
+    .buttonWrapper {
+        font-size: 20px;
+    }
+
+    .homeBtnJoin {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .discordLogo {
+        height: 20px;
+        margin-left: 15px;
+    }
 }
