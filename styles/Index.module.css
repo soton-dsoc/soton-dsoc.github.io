@@ -18,16 +18,16 @@ a:visited {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
-  font-size: 14px;
-  font-weight: 300;
+  /* font-size: 14px; */
+  /* font-weight: 300; */
   background: linear-gradient(to right top, #010101, #424242);
   color-scheme: 'dark';
 }
 
 .bodyWrapper {
   max-width: 1280px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 4vw;
+  padding-right: 4vw;
   margin-left: auto;
   margin-right: auto;
   display: flex;

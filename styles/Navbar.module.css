@@ -57,3 +57,24 @@
     margin-right: 10px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 1280px) {
+    .left > img {
+        height: 40px;
+    }
+    
+    .right > img {
+        height: 25px;
+    }
+
+    .pages > div {
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+    .Navbar {
+        font-size: 14px;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+}

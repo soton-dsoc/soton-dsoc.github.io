@@ -91,11 +91,11 @@
 
 @media only screen and (max-width: 1280px) {
     #title {
-        font-size: 5.5vw;
+        font-size: 60px;
     }
 
     #subtitle {
-        font-size: 2.75vw;
+        font-size: 30px;
     }
 
     .buttonWrapper {

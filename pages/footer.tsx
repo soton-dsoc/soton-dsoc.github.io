@@ -29,12 +29,10 @@ class Footer extends React.Component {
                             <img alt="" src={twitterLogo.src} onClick={()=> window.open(configs.twitter, "_blank")} className={styles.footerIcon}/>
                             <img alt="" src={discordLogo.src} onClick={()=> window.open(configs.discord_invite, "_blank")} className={styles.footerIcon}/>
                             <img alt="" src={linkedinLogo.src} onClick={()=> window.open(configs.linkedin, "_blank")} className={styles.footerIcon}/>
-                            <img alt="" src={emailLogo.src} onClick={()=> window.open(configs.email, "_blank")} className={styles.footerIcon} style={{ height: "25px"}} />
+                            <img alt="" src={emailLogo.src} onClick={()=> window.open(configs.email, "_blank")} className={styles.footerIcon} />
                         </div>
 
-                        <div className={styles.dsocIcon}>
-                            <img alt="" id={styles.dsocLogo} src={dsocLogo.src} />
-                        </div>
+                        <img alt="" id={styles.dsocLogo} src={dsocLogo.src} />
                     </div>
 
                     <div className={styles.footerBottom}>

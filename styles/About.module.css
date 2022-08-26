@@ -59,13 +59,13 @@
 .fcFront, .fcBack {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100%;justify-items: center;
     backface-visibility: hidden;
 }
 
 .fcFront {
-    width: 220px;
-    height: 220px;
+    /* width: 220px; */
+    /* height: 220px; */
     background-color: rgba(255, 255, 255, 0.05);
     padding: 20px;
     border-radius: 10px;
@@ -89,10 +89,12 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
+    width: 100%;
+    height: 100%;
 }
 
 .char {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -122,14 +124,6 @@
 }
 
 @media only screen and (max-width: 1280px) {
-    .upperImg {
-        height: 27vw;
-    }
-
-    .lowerImg {
-        height: 25vw;
-    }
-
     .aboutContainer {
         gap: 1vw;
     }
@@ -139,6 +133,41 @@
     }
 
     .team {
-        /* width: 100%; */
+        margin-top: 30px;
+        margin-bottom: 80px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 200px);
+        gap: 30px;
+    }
+
+    .flipCard {
+        height: 200px;
+        width: 200px;
+    }
+
+    .fcFront {
+        gap: 22px;
+    }
+
+    .fcFront > img {
+        margin-top: 5px;
+        height: 90px;
+    }
+
+    .teamCardName {
+        font-size: 14px;
+    }
+
+    .teamCardText {
+        gap: 7px;
+    }
+    
+    .clipCircle  {
+        clip-path: circle(45px at center);
+    }
+
+    .char {
+        font-size: 15px;
     }
 }

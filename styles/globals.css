@@ -40,15 +40,15 @@ p {
 
 @media only screen and (max-width: 1280px) {
   h1 {
-    font-size: 3.75vw;
+    font-size: 40px;
   }
 
   h2 {
-    font-size: 1.87vw;
+    font-size: 20px;
   }
 
   p {
-    font-size: 1.25vw;
+    font-size: 14px;
   }
 }
 
