@@ -26,8 +26,8 @@ a:visited {
 
 .bodyWrapper {
   max-width: 1280px;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-left: 40px;
+  padding-right: 40px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -90,3 +90,10 @@ a:visited {
 .topBtn:hover {
   background-color: #555;
 } */
+
+@media only screen and (max-width: 1280px) {
+  .bodyWrapper {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+}

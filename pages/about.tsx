@@ -28,7 +28,23 @@ function Tilt(props: any) {
     return <div ref={tilt} {...rest} />;
 }
 
+
 function About() {
+
+    const [tilt, setTilt] = React.useState(true);
+
+    if (typeof window !== "undefined") {
+        let width = Math.max(window.screen.width, window.innerWidth);
+
+        window.addEventListener('resize', () => {
+            if (width < 768) {
+                setTilt(false);
+            } else {
+                setTilt(true);
+            }
+        })
+    }
+
 
     type Person = {
         name: string;
@@ -171,7 +187,7 @@ function About() {
             <div className={styles.team}>
                 {
                     team.map((p, i) => 
-                    <Tilt className="box" options={options}>
+                    <Tilt disabled={true} id="tilter" className="box" options={options}>
                         <div className={styles.flipCard} key={i} onClick={() => window.open(p.linkedin)}>
                             <div className={styles.fcInner}>
                                 <div className={styles.fcFront}>

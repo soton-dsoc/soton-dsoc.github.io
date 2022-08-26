@@ -27,7 +27,7 @@ function Home() {
 
                     homeDiv.style.transform = `scale(${scaleValue})`;
                     homeDiv.style.filter = `blur(${blurValue}px)`;
-                    console.log(scaleValue);
+                    // console.log(scaleValue);
                 }
             })
         }

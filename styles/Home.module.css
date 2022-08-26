@@ -112,3 +112,39 @@
         margin-left: 15px;
     }
 }
+
+/* below here goes vertical */
+@media only screen and (max-width: 992px) {
+    .home {
+        margin-top: 30vh;
+        margin-bottom: 30vh;
+        height: auto;
+        flex-direction: column;
+        gap: 15vh;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .homeBlockText {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .homeBlockBtns {
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    #title {
+        font-size: 8vw;
+    }
+
+    #subtitle {
+        font-size: 4vw;
+    }
+
+    .homeBtnJoin {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}

@@ -171,3 +171,34 @@
         font-size: 15px;
     }
 }
+
+@media only screen and (max-width: 992px) {
+    .aboutContainer {
+        gap: 50px;
+    }
+
+    .upperContainer {
+        flex-direction: column;
+    }
+
+    .lowerContainer {
+        flex-direction: column-reverse;
+    }
+
+    .upperImg, .lowerImg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flipCard:hover .fcInner {
+        transform: none;
+    }
+}

@@ -7,7 +7,7 @@ function EventObject(props: any) {
     <div className={styles.eventBox} style={{ background: `${props.category === "upcoming" ? props.data.colour : ""}`}}>
         <div className={styles.title}>{props.data.title}</div>
         <div>{props.data.date.toUTCString()}</div>
-        <div>{props.data.description}</div>
+        <div className={styles.description}>{props.data.description}</div>
     </div>
     )
 }
