@@ -118,7 +118,7 @@
 @media only screen and (max-width: 992px) {
     .home {
         /* margin-top: 30vh; */
-        margin-bottom: 30vh;
+        /* margin-bottom: 30vh; */
         /* height: auto; */
         flex-direction: column;
         /* gap: 25vh; */

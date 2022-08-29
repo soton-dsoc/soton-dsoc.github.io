@@ -3,6 +3,12 @@ import styles from '../styles/Home.module.css'
 import discordLogo from '../public/discord-logo.svg'
 
 function Home() {
+
+    function scrollToElement(id: string) {
+        document.getElementById(id)?.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
     
     if (typeof window !== "undefined") {
         if (screen.width > 1000) {
@@ -57,7 +63,7 @@ function Home() {
                         </div>
                     </a>
 
-                    <a className={styles.homeBtnWhatsOn} style={{display: 'grid'}}>
+                    <a onClick={ () => scrollToElement("events")} className={styles.homeBtnWhatsOn} style={{display: 'grid'}}>
                         <div style={{ gridArea: '1 / 1 / 4 / 2', backgroundColor: '#0066FF', borderTopLeftRadius: '5px', borderBottomLeftRadius: '5px' }}></div>
                         <div style={{ gridArea: '1 / 2 / 2 / 3', background: 'linear-gradient(90deg, #0066FF, #9000A8)' }}></div>
 

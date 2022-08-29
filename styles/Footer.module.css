@@ -14,10 +14,14 @@
     flex-direction: row;
 }
 
-.left {
+.left, .right {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.right {
+    align-items: flex-end;
 }
 
 .socialBox {
@@ -33,14 +37,18 @@
     justify-content: space-between;
 }
 
-.left .bottom > div {
+.pages {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     gap: 15px;
+    font-weight: 800;
 }
 
-.pages {
-    font-weight: 800;
+.right .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .socialBox > img {
@@ -59,7 +67,7 @@
         padding-right: 4vw;
     }
     
-    .left {
+    .left, .right {
         gap: 25px;
     }
 

@@ -144,7 +144,7 @@ function About() {
     }
 
     return (
-        <div id="about" style={{ paddingTop: '80px' }} className={styles.about}>
+        <div id="about" className={styles.about}>
             <h1>About</h1>
 
             <div className={styles.aboutContainer}>

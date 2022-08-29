@@ -1,0 +1,40 @@
+{
+    "events": [
+        {
+            "title": "Blockchain 101 - Session 0",
+            "date": "2022-02-08T19:00:00",
+            "description": "",
+            "media": []
+        },
+        {
+            "title": "dSoc Social - Bitcoin Pub Quiz",
+            "date": "2022-02-15T19:00:00",
+            "description": "",
+            "media": []
+        },
+        {
+            "title": "Crypto Trading 101",
+            "date": "2022-02-24T19:00:00",
+            "description": "",
+            "media": []
+        },
+        {
+            "title": "Blockchain 101 - Introduction to Ethereum",
+            "date": "2022-03-03T19:00:00",
+            "description": "",
+            "media": []
+        },
+        {
+            "title": "Distributed Web - Introduction to IPFS",
+            "date": "2022-03-17T19:00:00",
+            "description": "",
+            "media": []
+        },
+        {
+            "title": "Cryptocurrencies, NFTs & Web3 - Lessons from the Metaverse",
+            "date": "2022-05-05T19:00:00",
+            "description": "",
+            "media": []
+        }
+    ]
+}

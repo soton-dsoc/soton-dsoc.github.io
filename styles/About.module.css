@@ -1,3 +1,7 @@
+.about {
+    padding-top: 70px;
+}
+
 .aboutContainer {
     display: flex;
     flex-direction: column;

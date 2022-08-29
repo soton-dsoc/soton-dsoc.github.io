@@ -8,3 +8,19 @@
     display: flex;
     flex-direction: column;
 }
+
+.upcoming > p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .events {
+        gap: 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .upcoming > p {
+        /* text-align: left; */
+    }
+}

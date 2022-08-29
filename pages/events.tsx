@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from '../styles/Events.module.css';
+import eventsSource from './events.json'
 
 import EventObject from './EventObject';
 import { StaticImageData } from 'next/image';
@@ -7,39 +8,37 @@ import { StaticImageData } from 'next/image';
 function Events() {
 
     type Event = {
+        key: number,
         title: string,
         date: Date,
         description: string,
-        colour: string,
+        colour?: string,
         media?: StaticImageData[]
     }
 
-    const events: Event[] = [
-        {
-            title: "Big Event",
-            date: new Date("2022-08-31T22:00:00"),
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            colour: "#44bd32"
-        },
-        {
-            title: "Best Event Ever",
-            date: new Date("2020-11-15T20:30:00"),
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            colour: "#8c7ae6"
-        },
-        {
-            title: "Huge Event",
-            date: new Date("2024-11-15T20:30:00"),
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            colour: "#ff0000"
-        },
-        {
-            title: "An Event You Cannot Miss",
-            date: new Date("2019-11-15T20:30:00"),
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            colour: "#273c75"
+    var events: Event[] = [];
+
+    for (let i = 0; i < eventsSource.events.length; i++) {
+
+        const e = eventsSource.events[i];
+
+        var mediaJSON: StaticImageData[] = [];
+
+        for (let j = 0; j < e.media.length; j++) {
+            const image: StaticImageData = require("../public/" + e.media[j]);
+            mediaJSON.push(image);
         }
-    ]
+        
+        events.push({
+            key: i,
+            title: e.title,
+            date: new Date(e.date),
+            description: e.description,
+            media: mediaJSON
+        })
+    }
+
+    console.log(events);
 
     var upcomingEvents: Event[] = [];
     var pastEvents: Event[] = [];
@@ -52,16 +51,29 @@ function Events() {
         } else { // past
             pastEvents.push(e);
         }
-    })
+    });
+
+    upcomingEvents.sort((a, b) => {
+        if (a.date > b.date) return 1;
+        if (a.date < b.date) return -1;
+        return 0;
+    });
+
+    pastEvents.sort((a, b) => {
+        if (a.date > b.date) return -1;
+        if (a.date < b.date) return 1;
+        return 0;
+    });
 
     return (
         <div id="events" className={styles.events} style={{ paddingTop: '70px' }}>
             <h1>Events</h1>
                 <div className={styles.upcoming}>
-                    <h2>Upcoming Events</h2>
+                    <h2 id="upcomingDiv">Upcoming Events</h2>
+                        <p style={{ display: `${upcomingEvents.length > 0 ? "none" : "block"}` }}>It seems like there are no events planned right now, please check again soon!</p>
                         {
                             upcomingEvents.map((e) => 
-                                <EventObject data={e} category="upcoming"/>
+                                <EventObject data={e} category="upcoming" className="collapsible"/>
                             )
                         }
                 </div>
@@ -70,7 +82,7 @@ function Events() {
                     <h2>Past Events</h2>
                         {
                             pastEvents.map((e) => 
-                                <EventObject data={e} category="past"/>
+                                <EventObject data={e} category="past" className="collapsible"/>
                             )
                         }
                 </div>

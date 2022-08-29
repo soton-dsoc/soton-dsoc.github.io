@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  -webkit-text-size-adjust: none; /* this could solve the auto-scaling that safari performs when the font is too small */
 }
 
 a {
@@ -58,4 +59,10 @@ p {
 
 @media only screen and (max-width: 768px) {
 
+}
+
+@media only screen and (max-width: 480px) {
+  h2 {
+    /* text-align: left; */
+  }
 }
