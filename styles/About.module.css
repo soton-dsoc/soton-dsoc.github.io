@@ -134,7 +134,7 @@
 
     .team {
         margin-top: 30px;
-        margin-bottom: 80px;
+        margin-bottom: 60px;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(3, 200px);

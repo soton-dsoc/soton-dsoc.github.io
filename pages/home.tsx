@@ -34,13 +34,14 @@ function Home() {
     }
 
     return (
+        // <div className={styles.homeWrapper}>
         <div id="home" className={styles.home}>
             <div className={styles.homeBlockText}>
                 <div>
-                    <div id={styles.subtitle}>
+                    <div id="subtitle" className={styles.subtitle}>
                         We are the
                     </div>
-                    <div id={styles.title}>
+                    <div id="title" className={styles.title}>
                         Decentralised <br></br>
                         Society
                     </div>
@@ -70,6 +71,7 @@ function Home() {
                 </div>
             </div>
         </div>
+        // </div>
     );
 }
 

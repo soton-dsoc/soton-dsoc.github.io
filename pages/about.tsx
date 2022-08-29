@@ -17,7 +17,7 @@ import jj from '../public/jj.jpg'
 import sy from '../public/sy.jpg'
 import ot from '../public/ot.jpeg'
 
-function Tilt(props: any) {
+function Tilt(props: any): JSX.Element {
     const { options, ...rest } = props;
     const tilt = useRef(null);
   
@@ -31,12 +31,14 @@ function Tilt(props: any) {
 
 function About() {
 
-    const [tilt, setTilt] = React.useState(true);
+    const [doesTilt, setTilt] = React.useState(true);
 
     if (typeof window !== "undefined") {
-        let width = Math.max(window.screen.width, window.innerWidth);
+        // let width = Math.max(window.screen.width, window.innerWidth);
 
         window.addEventListener('resize', () => {
+            let width = window.innerWidth;
+
             if (width < 768) {
                 setTilt(false);
             } else {
@@ -187,7 +189,7 @@ function About() {
             <div className={styles.team}>
                 {
                     team.map((p, i) => 
-                    <Tilt disabled={true} id="tilter" className="box" options={options}>
+                    <Tilt id="tilter" className="box" options={options}>
                         <div className={styles.flipCard} key={i} onClick={() => window.open(p.linkedin)}>
                             <div className={styles.fcInner}>
                                 <div className={styles.fcFront}>

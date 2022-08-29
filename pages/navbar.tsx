@@ -23,10 +23,11 @@ function Navbar() {
                     <div className={styles.left}>
                         <img src={dsocLogo.src} onClick={ () => scrollToElement("home") }></img>
 
+                        {/* desktop (> 480) */}
                         <div className={styles.pages}>
                             <div onClick={ () => scrollToElement("events") }>Events</div>
                             <div onClick={ () => scrollToElement("about") }>About</div>
-                            <div onClick={ () => window.open("https://dsoc.substack.com/")} style={{marginLeft: "35px"}}>Newsletter</div>
+                            {/* <div onClick={ () => window.open("https://dsoc.substack.com/")} style={{marginLeft: ""}}>Newsletter</div> */}
                         </div>
                     </div>
 

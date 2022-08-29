@@ -1,42 +1,23 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap'); */
 
-.Footer {
-    /* bottom: 0; */
+.footer {
     background-color: #000;
-    /* padding: 20px 40px 20px 40px; */
     padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
     font-size: 14px;
     font-weight: 300;
 }
 
 .wrapper {
-    /* max-width: 1280px; */
     width: 100%;
-}
-
-.footerTop {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
 }
 
-.footerBottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-top: 20px;
-}
-
-.footerLeft {
+.left {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 30px;
 }
 
 .socialBox {
@@ -46,50 +27,55 @@
     gap: 30px;
 }
 
-.footerIcon {
-    height: 20px;
-    cursor: "pointer";
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.hae {
+.left .bottom > div {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.footerRight {
-    display: flex;
-    flex-direction: column;
+.pages {
+    font-weight: 800;
 }
 
-#dsocLogo {
-    height: 35px;
+.socialBox > img {
+    height: 20px;
+    cursor: "pointer";
+}
+
+.right .top > img {
+    height: 30px;
 }
 
 @media only screen and (max-width: 1280px) {
-    .Footer {
-        font-size: 11px;
+    .footer {
+        font-size: 12px;
         padding-left: 4vw;
         padding-right: 4vw;
     }
-
-    .footerIcon {
-        height: 15px;
+    
+    .left {
+        gap: 25px;
     }
 
     .socialBox {
-        gap: 22px;
+        gap: 25px;
     }
 
-    .footerBottom {
-        margin-top: 15px;
+    .socialBox > img {
+        height: 15px;
     }
 
-    .hae {
+    .right .top > img {
+        height: 25px;
+    }
+
+    .bottom > div {
         gap: 13px;
-    }
-
-    #dsocLogo {
-        height: 27px;
     }
 }

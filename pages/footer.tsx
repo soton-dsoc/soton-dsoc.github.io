@@ -22,26 +22,60 @@ class Footer extends React.Component {
     
 
         return (
-            <div className={styles.Footer}>
+            // <div className={styles.Footer}>
+            //     <div className={styles.wrapper}>
+            //         <div className={styles.top}>
+            //             <div className={styles.socialBox}>
+            //                 <img alt="" src={twitterLogo.src} onClick={()=> window.open(configs.twitter, "_blank")} className={styles.footerIcon}/>
+            //                 <img alt="" src={discordLogo.src} onClick={()=> window.open(configs.discord_invite, "_blank")} className={styles.footerIcon}/>
+            //                 <img alt="" src={linkedinLogo.src} onClick={()=> window.open(configs.linkedin, "_blank")} className={styles.footerIcon}/>
+            //                 <img alt="" src={emailLogo.src} onClick={()=> window.open(configs.email, "_blank")} className={styles.footerIcon} />
+            //             </div>
+
+            //             <img alt="" id={styles.dsocLogo} src={dsocLogo.src} />
+            //         </div>
+
+            //         <div className={styles.bottom}>
+            //             <div className={styles.footerLeft}>
+            //                 <div className={styles.hae}>
+                                // <div onClick={ () => scrollToElement("home")} style={{ cursor: "pointer"}}>Home</div>
+                                // <div onClick={ () => scrollToElement("events")} style={{ cursor: "pointer"}}>Events</div>
+                                // <div onClick={ () => scrollToElement("about")} style={{ cursor: "pointer"}}>About</div>
+            //                 </div>
+            //                 <div className={styles.external}>
+            //                     <div>More</div>
+            //                     <div>Newsletter</div>
+            //                 </div>
+            //             </div>
+            //         </div>
+            //     </div>
+            // </div>
+            <div className={styles.footer}>
                 <div className={styles.wrapper}>
-                    <div className={styles.footerTop}>
-                        <div className={styles.socialBox}>
-                            <img alt="" src={twitterLogo.src} onClick={()=> window.open(configs.twitter, "_blank")} className={styles.footerIcon}/>
-                            <img alt="" src={discordLogo.src} onClick={()=> window.open(configs.discord_invite, "_blank")} className={styles.footerIcon}/>
-                            <img alt="" src={linkedinLogo.src} onClick={()=> window.open(configs.linkedin, "_blank")} className={styles.footerIcon}/>
-                            <img alt="" src={emailLogo.src} onClick={()=> window.open(configs.email, "_blank")} className={styles.footerIcon} />
+                    <div className={styles.left}>
+                        <div className={styles.top}>
+                            <div className={styles.socialBox}>
+                                <img alt="" src={twitterLogo.src} onClick={()=> window.open(configs.twitter, "_blank")}/>
+                                <img alt="" src={discordLogo.src} onClick={()=> window.open(configs.discord_invite, "_blank")}/>
+                                <img alt="" src={linkedinLogo.src} onClick={()=> window.open(configs.linkedin, "_blank")}/>
+                                <img alt="" src={emailLogo.src} onClick={()=> window.open(configs.email, "_blank")}/>
+                            </div>
                         </div>
-
-                        <img alt="" id={styles.dsocLogo} src={dsocLogo.src} />
-                    </div>
-
-                    <div className={styles.footerBottom}>
-                        <div className={styles.footerLeft}>
-                            <div className={styles.hae}>
+                        <div className={styles.bottom}>
+                            <div className={styles.pages}>
                                 <div onClick={ () => scrollToElement("home")} style={{ cursor: "pointer"}}>Home</div>
                                 <div onClick={ () => scrollToElement("events")} style={{ cursor: "pointer"}}>Events</div>
                                 <div onClick={ () => scrollToElement("about")} style={{ cursor: "pointer"}}>About</div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div className={styles.right}>
+                        <div className={styles.top}>
+                            <img src={dsocLogo.src} className={styles.dsocLogo}/>
+                        </div>
+                        <div className={styles.bottom}>
+                            <div>Newsletter</div>
                         </div>
                     </div>
                 </div>

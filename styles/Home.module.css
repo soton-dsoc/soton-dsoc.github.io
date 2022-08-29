@@ -3,23 +3,24 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
-    overflow-x: hidden;
-    padding-left: 70px;
-    padding-right: 70px;
+    overflow: hidden;
+    /* position: absolute; */
+    /* padding-left: 70px;
+    padding-right: 70px; */
 }
 
 .homeBlockText {
-    flex: 1;
+    flex: 1.5 1;
     display: flex; 
     align-items: center;
-    justify-content: left;
+    justify-content: center;
 }
 
 .homeBlockBtns {
-    flex: 1;
+    flex: 1 1;
     display: flex; 
     align-items: center;
-    justify-content: right;
+    justify-content: center;
 }
 
 .buttonWrapper {
@@ -79,22 +80,22 @@
     width: 110%;
 }
 
-#title {
+.title {
     font-size: 70px;
     font-weight: 700;
 }
 
-#subtitle {
+.subtitle {
     font-size: 35px;
     font-weight: 300;
 }
 
 @media only screen and (max-width: 1280px) {
-    #title {
+    .title {
         font-size: 60px;
     }
 
-    #subtitle {
+    .subtitle {
         font-size: 30px;
     }
 
@@ -116,35 +117,54 @@
 /* below here goes vertical */
 @media only screen and (max-width: 992px) {
     .home {
-        margin-top: 30vh;
+        /* margin-top: 30vh; */
         margin-bottom: 30vh;
-        height: auto;
+        /* height: auto; */
         flex-direction: column;
-        gap: 15vh;
+        /* gap: 25vh; */
         padding-left: 0px;
         padding-right: 0px;
     }
 
     .homeBlockText {
         justify-content: center;
-        align-items: flex-start;
+        /* align-items: flex-start; */
     }
 
     .homeBlockBtns {
         justify-content: center;
-        align-items: flex-end;
+        /* align-items: flex-end; */
     }
 
-    #title {
+    .title {
         font-size: 8vw;
     }
 
-    #subtitle {
+    .subtitle {
         font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .title {
+        font-size: 10vw;
+    }
+
+    .subtitle {
+        font-size: 5vw
     }
 
     .homeBtnJoin {
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 25vw;
+        padding-right: 25vw;
+    }
+
+    .buttonWrapper {
+        font-size: 16px;
+    }
+
+    .discordLogo {
+        height: 16px;
+        margin-left: 12px;
     }
 }
