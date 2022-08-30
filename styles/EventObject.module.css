@@ -18,6 +18,55 @@
     font-weight: 700;
 }
 
-.description {
-    font-size: 12px;
+.date {
+    font-size: 16px;
 }
+
+.description {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .date {
+        font-size: 14px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .eventBox {
+        padding-left: 6vw;
+        padding-right: 6vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .title {
+        font-size: 18px;
+    }
+
+    .date, .description {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .title {
+      font-size: 4.5vw;
+    }
+  
+    .description, .date {
+      font-size: 3vw;
+    }
+  }
+  

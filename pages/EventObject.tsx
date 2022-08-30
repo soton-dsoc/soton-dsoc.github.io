@@ -8,7 +8,7 @@ function EventObject(props: any) {
         // using the blue-pink gradient might be better to stick to the button colours
         <div className={styles.eventBox} style={{ background: `${props.category === "upcoming" ? "linear-gradient(90deg, #9000A8, #0066FF)" : ""}`}}>
             <div className={styles.title}>{props.data.title}</div>
-            <div>{props.data.date.toUTCString()}</div>
+            <div className={styles.date}>{props.data.date.toUTCString()}</div>
             <div className={styles.description}>{props.data.description}</div>
         </div>
     )

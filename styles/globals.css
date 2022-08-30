@@ -62,7 +62,26 @@ p {
 }
 
 @media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+
   h2 {
     /* text-align: left; */
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 9vw;
+  }
+
+  h2 {
+    font-size: 4.5vw;
+  }
+
+  p {
+    font-size: 4vw;
   }
 }
