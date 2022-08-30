@@ -68,9 +68,8 @@
 }
 
 .fcFront {
-    /* width: 220px; */
-    /* height: 220px; */
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.1);
+    /* background-color: #333333; */
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -82,12 +81,24 @@
 .fcBack {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.05);
+    /* background-color: #333333; */
     color: #ffffff;
     transform: rotateY(180deg);
     border-radius: 10px;
     align-items: center;
     justify-content: center;
 }
+
+/* firefox only */
+@-moz-document url-prefix() {
+    .fcFront {
+      background-color: #333333;
+    }
+
+    .fcBack {
+        background-color: #222222;
+    }
+  }
 
 .hashGrid {
     display: grid;
