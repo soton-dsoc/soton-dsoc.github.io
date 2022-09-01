@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { Component, SetStateAction, useEffect, useState } from 'react';
 import styles from '../styles/Events.module.css';
 import eventsSource from './events.json'
 
@@ -17,53 +17,104 @@ function Events() {
     }
 
     var events: Event[] = [];
+    var states: Map<number, [boolean, React.Dispatch<SetStateAction<boolean>>]> = new Map() // a map between the event key (k) and the pair of state variables (v)
 
-    for (let i = 0; i < eventsSource.events.length; i++) {
+    function getEvents() {
+        for (let i = 0; i < eventsSource.events.length; i++) {
 
-        const e = eventsSource.events[i];
+            const e = eventsSource.events[i];
 
-        var mediaJSON: StaticImageData[] = [];
+            var mediaJSON: StaticImageData[] = [];
 
-        for (let j = 0; j < e.media.length; j++) {
-            const image: StaticImageData = require("../public/" + e.media[j]);
-            mediaJSON.push(image);
+            for (let j = 0; j < e.media.length; j++) {
+                const image: StaticImageData = require("../public/" + e.media[j]);
+                mediaJSON.push(image);
+            }
+            
+            events.push({
+                key: i,
+                title: e.title,
+                date: new Date(e.date),
+                description: e.description,
+                media: mediaJSON
+            })
         }
-        
-        events.push({
-            key: i,
-            title: e.title,
-            date: new Date(e.date),
-            description: e.description,
-            media: mediaJSON
-        })
     }
 
-    console.log(events);
+    function generateStates() {
+        for (let i = 0; i < events.length; i++) {
+            const [eventState, setState] = React.useState(false);
+            states.set(events[i].key, [eventState, setState])
+        }
+    }
+
+    function toggleEvent(key: number) {
+        const pair = states.get(key);
+
+        const eventState = pair?.[0];
+        const setState = pair?.[1];
+        
+        if (eventState != undefined && setState != undefined) {
+            setState(!eventState);
+        }
+    }
+ 
+    function updateStates(key: number) {
+        toggleEvent(key);
+
+        for (let i = 0; i < events.length; i++) {
+            const pair = states.get(i);
+
+            const eventState = pair?.[0];
+            const setState = pair?.[1];
+
+            if (eventState && setState && i != key) {
+                setState(false);
+            }
+        }
+
+        console.log(states)
+    }
+
+    function getState(key: number): boolean {
+        const pair = states.get(key);
+        const eventState = pair?.[0];
+        if (eventState) return eventState
+        return false;
+    }
+
+    getEvents();
+    generateStates();
 
     var upcomingEvents: Event[] = [];
     var pastEvents: Event[] = [];
 
-    events.map((e) => {
-        var today = new Date();
+    function categoriseEvents() {
 
-        if (e.date > today) { // future
-            upcomingEvents.push(e);
-        } else { // past
-            pastEvents.push(e);
-        }
-    });
+        events.map((e) => {
+            var today = new Date();
 
-    upcomingEvents.sort((a, b) => {
-        if (a.date > b.date) return 1;
-        if (a.date < b.date) return -1;
-        return 0;
-    });
+            if (e.date > today) { // future
+                upcomingEvents.push(e);
+            } else { // past
+                pastEvents.push(e);
+            }
+        });
 
-    pastEvents.sort((a, b) => {
-        if (a.date > b.date) return -1;
-        if (a.date < b.date) return 1;
-        return 0;
-    });
+        upcomingEvents.sort((a, b) => {
+            if (a.date > b.date) return 1;
+            if (a.date < b.date) return -1;
+            return 0;
+        });
+
+        pastEvents.sort((a, b) => {
+            if (a.date > b.date) return -1;
+            if (a.date < b.date) return 1;
+            return 0;
+        });
+    }
+
+    categoriseEvents();
 
     return (
         <div id="events" className={styles.events} style={{ paddingTop: '70px' }}>
@@ -72,8 +123,10 @@ function Events() {
                     <h2 id="upcomingDiv">Upcoming Events</h2>
                         <p style={{ display: `${upcomingEvents.length > 0 ? "none" : "block"}` }}>It seems like there are no events planned right now, please check again soon!</p>
                         {
-                            upcomingEvents.map((e) => 
-                                <EventObject data={e} category="upcoming" className="collapsible"/>
+                            upcomingEvents.map((e) =>
+                                <div onClick={ () => updateStates(e.key) }>
+                                    <EventObject data={e} category="upcoming" active={getState(e.key)}/>
+                                </div>
                             )
                         }
                 </div>
@@ -81,8 +134,10 @@ function Events() {
                 <div className={styles.past}>
                     <h2>Past Events</h2>
                         {
-                            pastEvents.map((e) => 
-                                <EventObject data={e} category="past" className="collapsible"/>
+                            pastEvents.map((e) =>
+                                <div onClick={ () => updateStates(e.key) }>
+                                    <EventObject data={e} category="past" active={getState(e.key)}/>
+                                </div>
                             )
                         }
                 </div>

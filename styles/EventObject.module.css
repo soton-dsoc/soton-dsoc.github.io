@@ -1,10 +1,17 @@
-.eventBox {
+/* .active {
+    color: red;
+}
+
+.passive {
+    color: blue;
+} */
+
+.box {
     border-radius: 10px;
     padding: 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 25px;
     /* max-width: 800px; */
     width: 100%;
     align-self: center;
@@ -41,7 +48,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .eventBox {
+    .box {
         padding-left: 6vw;
         padding-right: 6vw;
         padding-top: 3vh;
