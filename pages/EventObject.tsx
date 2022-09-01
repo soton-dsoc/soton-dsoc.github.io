@@ -7,14 +7,14 @@ function EventObject(props: any) {
         // <div className={styles.eventBox} style={{ background: `${props.category === "upcoming" ? props.data.colour : ""}`}}>
         
         // using the blue-pink gradient (if upcoming) might be better to stick to the button colours
-        <div className={styles.wrapper} onClick={() => console.log(props.active)}>
+        <div className={styles.wrapper}>
             <div className={styles.box} style={{ background: `${props.category === "upcoming" ? "linear-gradient(90deg, #9000A8, #0066FF)" : ""}`}}>
                 <div className={styles.title}>{props.data.title}</div>
                 <div className={styles.date}>{props.data.date.toUTCString()}</div>
                 {/* <div className={styles.description}>{props.data.description}</div> */}
             </div>
-            <div className={`${styles.collapsible} ${props.active ? styles.active : styles.passive}`} style={{display: `${props.active ? "block" : "none"}`}}>
-                THIS APPEARS
+            <div className={`${styles.collapsible} ${props.active ? styles.active : ""}`}>
+                {props.data.description}
             </div>
         </div>
     )

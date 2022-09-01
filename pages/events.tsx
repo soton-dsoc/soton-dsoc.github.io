@@ -68,12 +68,10 @@ function Events() {
             const eventState = pair?.[0];
             const setState = pair?.[1];
 
-            if (eventState && setState && i != key) {
+            if (eventState == true && setState && i != key) {
                 setState(false);
             }
         }
-
-        console.log(states)
     }
 
     function getState(key: number): boolean {
