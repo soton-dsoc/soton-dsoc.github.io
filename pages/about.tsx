@@ -151,7 +151,7 @@ function About() {
                 <div className={styles.upperContainer}>
                     <div className={styles.aboutText}>
                         <p>
-                            Started by a group of freshers in September 2021, the University of Southampton Decentralised Society (dSoc) was born to establish a connecting hub between students interested in the philosophy of decentralisation. The motivation behind the society was to create a space where like-minded students could learn from each other, build a friendly and knowledgeable community, and develop activities and projects in the Web3 ecosystem.
+                            Started by a group of freshers in September 2021, the University of Southampton Decentralised Society (dSoc) was born to establish a connecting hub between students interested in the philosophy of decentralisation. The motivation behind the society was to create a space where like-minded students could learn from each other, build a friendly and skilled community, and develop activities and projects in the Web3 ecosystem.
                         </p>
 
                         <p>
