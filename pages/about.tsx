@@ -151,15 +151,13 @@ function About() {
                 <div className={styles.upperContainer}>
                     <div className={styles.aboutText}>
                         <p>
-                            Established in September 2021, the University of Southampton Decentralised Society (commonly known as dSoc) was founded with the purpose of exploring and educating other students in the field of decentralisation, building a community to discuss new ideas, and creating an environment to pursue successful projects related to Web3.
+                            Started by a group of freshers in September 2021, the University of Southampton Decentralised Society (dSoc) was born to establish a connecting hub between students interested in the philosophy of decentralisation. The motivation behind the society was to create a space where like-minded students could learn from each other, build a friendly and knowledgeable community, and develop activities and projects in the Web3 ecosystem.
                         </p>
 
                         <p>
-                            Whether you have just heard about blockchain or you are a smart contract developer, we'd love to see you in our meetings sharing your views with other like-minded people!
+                            In less than a year, dSoc had already reached more than 280 members and hosted six events, making us one of the fastest-growing clubs on campus. We have also established connections with reputable institutions, companies, and other organisations worldwide, with whom we look forward to cooperating.
                         </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        </p>
+
                     </div>
 
                     <img src={dsocEvent.src} className={styles.upperImg}/>
@@ -170,16 +168,18 @@ function About() {
 
                     <div className={styles.aboutText}>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            We are working hard toward one of our most important goals: becoming a Decentralised Autonomous Organisation (DAO) by making our own blockchain. We believe this step is crucial to evolving into a truly decentralised society.
+                        </p>
+                        <p>
+                            But that's not all. Apart from the governance use case, our network will open the door to myriad possibilities: a reward system to motivate each other, an NFT marketplace, a microeconomy, or the tokenisation of virtually anything!
                         </p>
 
                         <p>
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Whether you have just heard about blockchain or are an expert in smart contracts, we would love to have you in the society and attend our events! Join our discord server and stay tuned!
                         </p>
-
-                        <p>
+                        {/* <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        </p>
+                        </p> */}
                     </div>
                 </div>
             </div>
