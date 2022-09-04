@@ -151,7 +151,7 @@ function About() {
                 <div className={styles.upperContainer}>
                     <div className={styles.aboutText}>
                         <p>
-                            Started by a group of freshers in September 2021, the University of Southampton Decentralised Society (dSoc) was born to establish a connecting hub between students interested in the philosophy of decentralisation. The motivation behind the society was to create a space where like-minded students could learn from each other, build a friendly and skilled community, and develop activities and projects in the Web3 ecosystem.
+                            Started by a group of freshers in September 2021, the University of Southampton Decentralised Society (dSoc) was born to establish a connecting hub between students interested in the philosophy of decentralisation. The motivation behind the society was to create a space where like-minded students could learn from each others, build a friendly and skilled community, and develop activities and projects in the Web3 ecosystem.
                         </p>
 
                         <p>
@@ -171,7 +171,7 @@ function About() {
                             We are working hard toward one of our most important goals: becoming a Decentralised Autonomous Organisation (DAO) by making our own blockchain. We believe this step is crucial to evolving into a truly decentralised society.
                         </p>
                         <p>
-                            But that's not all. Apart from the governance use case, our network will open the door to myriad possibilities: a reward system to motivate each other, an NFT marketplace, a microeconomy, or the tokenisation of virtually anything!
+                            But that's not all. Apart from the governance use case, our network will open the door to myriad possibilities: a reward system to motivate each others, an NFT marketplace, a microeconomy, or the tokenisation of virtually anything!
                         </p>
 
                         <p>
