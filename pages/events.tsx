@@ -11,9 +11,12 @@ function Events() {
         key: number,
         title: string,
         date: Date,
-        description: string,
-        colour?: string,
-        media?: StaticImageData[]
+        location: string,
+        abstract: string[],
+        organisers: string[],
+        speakers: string[],
+        learningOutcomes: string[],
+        media: StaticImageData[]
     }
 
     var events: Event[] = [];
@@ -35,7 +38,11 @@ function Events() {
                 key: i,
                 title: e.title,
                 date: new Date(e.date),
-                description: e.description,
+                location: e.location,
+                abstract: e.abstract,
+                organisers: e.organisers,
+                speakers: e.speakers,
+                learningOutcomes: e.learningOutcomes,
                 media: mediaJSON
             })
         }

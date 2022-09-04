@@ -10,12 +10,26 @@
     display: none;
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
 .collapsible.active {
-    display: block;
+    display: flex;
+    gap: 5vw;
+    flex-direction: row;
+}
+
+.collapsible p {
+    font-size: 14px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
 }
 
 .box {
@@ -37,6 +51,11 @@
     font-weight: 700;
 }
 
+/* .subtitle {
+    font-size: 24px;
+    font-weight: 700;
+} */
+
 .date {
     font-size: 16px;
 }
@@ -50,12 +69,22 @@
         font-size: 20px;
     }
 
+    .collapsible p {
+        font-size: 12px;
+    }
+
     .date {
         font-size: 14px;
     }
 
     .description {
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .collapsible.active {
+        flex-direction: column;
     }
 }
 
@@ -66,6 +95,13 @@
         padding-top: 3vh;
         padding-bottom: 3vh;
         gap: 10px;
+    }
+
+    .collapsible {
+        padding-left: 6vw;
+        padding-right: 6vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
     }
 }
 
@@ -82,6 +118,10 @@
 @media only screen and (max-width: 320px) {
     .title {
       font-size: 4.5vw;
+    }
+
+    .collapsible p {
+        font-size: 3vw;
     }
   
     .description, .date {
