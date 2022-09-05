@@ -101,7 +101,7 @@
         },
         {
             "title": "Introduction to IPFS",
-            "date": "2022-05-17T19:00:00",
+            "date": "2022-03-17T19:00:00",
             "location": "Physics (46 / 2003)",
             "abstract": [
                 "The current web mostly relies on centralised servers, which are subject to vulnerabilities and concerns, such as DDoS attacks, censorship, data breaches, or networking errors. However, an emerging protocol named IPFS could avoid these issues by establishing a distributed file-sharing network with no single point of failure.",
