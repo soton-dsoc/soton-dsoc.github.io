@@ -23,7 +23,7 @@
                 "Learn how to inspect a blockchain"
             ],
             "media": [
-                "audience.jpg"
+                "blockchain101.jpg"
             ]
         },
         {
@@ -31,25 +31,127 @@
             "date": "2022-02-15T19:00:00",
             "location": "Brewhouse & Kitchen",
             "abstract": [
-                "The University of Southampton Decentralised Society, also known as dSoc, is presenting Blockchain 101 — a new series of workshops that will introduce the wonders of blockchain technology to everyone interested. The first workshop is led by George Giamouridis - PhD researcher at the Cyber Security Research Group of our university.",
-                "The team will give a brief talk about the history and technical aspects of Bitcoin, the first cryptocurrency that introduced the blockchain to the world. You will also be able to directly interact with the Bitcoin network and explore blocks, transactions and other metadata.", 
-                "This workshop relies on working with a laptop and basic knowledge of the terminal is recommended. There will be helpers assisting with the setup and troubleshooting.",
-                "Refreshments will be provided!"
+                "Following the first workshop, we invite everyone to our first social — Bitcoin Pub Quiz Test your knowledge of Bitcoin and basics of blockchain in teams of 5 people. Every member of the winning team will receive a dSoc T-shirt!",
+                "This is also a great opportunity to connect with other dSoc members and discuss anything related to crypto, blockchain and web3 in an informal setting.",
+                "We look forward to seeing you there!"
+            ],
+            "organisers": [
+                "dSoc",
+                "Brewhouse & Kitchen"
+            ],
+            "speakers": [
+                "Everyone"
+            ],
+            "learningOutcomes": [
+                "Learn interesting facts about Bitcoin",
+                "Meet each others in the dSoc community"
+            ],
+            "media": [
+                "bitcoin_pub.jpg",
+                "pub.jpg"
+            ]
+        },
+        {
+            "title": "Crypto Trading 101",
+            "date": "2022-02-24T19:00:00",
+            "location": "Physics (46 / 2003)",
+            "abstract": [
+                "The Decentralised Society at the University of Southampton is hosting a talk — Crypto Trading 101 — where you can learn about DeFi protocols, NFT investments, coin market caps, crypto market analysis and more.",
+                "Whether you’ve just heard about crypto, or you’re part of the Bored Ape Yacht Club, we invite you to join us for this interactive talk by Tony Su from OTSO Fintech Corp., where he will show you how to identify opportunities in crypto and invest in them. He will also be giving out Fantom (FTM) — more info during the event."
             ],
             "organisers": [
                 "dSoc"
             ],
             "speakers": [
-                "George Giamouridis",
+                "Tony Su"
+            ],
+            "learningOutcomes": [
+                "Basic understanding of the more financial aspects of crypto, NFTs and DeFi"
+            ],
+            "media": [
+                "crypto_trad.png"
+            ]
+        },
+        {
+            "title": "Blockchain 101 - Introduction to Ethereum",
+            "date": "2022-03-03T19:00:00",
+            "location": "Physics (46 / 2003)",
+            "abstract": [
+                "Following Session 0, The Decentralised Society is bringing the second workshop of the Blockchain 101 series. Introduction to Ethereum, led by PhD researcher George Giamouridis, will take place on 46 / 2003 at 6 pm.",
+                "In this event, we are going to go through the Ethereum ecosystem and explain how the biggest decentralised world computer works. We will cover topics like clients, wallets, transactions and of course smart contracts. We will focus on smart contracts development, and we will walk you through how to code your own smart contracts using the Solidity programming language.",
+                "Prerequisites:",
+                "- Basic programming skills (variables, functions, data structures, etc)",
+                "- Blockchain fundamentals",
+                "- MetaMask wallet"
+            ],
+            "organisers": [
+                "dSoc"
+            ],
+            "speakers": [
+                "George Giamouridis"
+            ],
+            "learningOutcomes": [
+                "Understand the basics of the Ethereum blockchain and the EVM",
+                "Understand the concept and purpose of smart contracts",
+                "Know how to deploy a smart contract in Solidity"
+            ],
+            "media": [
+                "eth.jpg"
+            ]
+        },
+        {
+            "title": "Introduction to IPFS",
+            "date": "2022-05-17T19:00:00",
+            "location": "Physics (46 / 2003)",
+            "abstract": [
+                "The current web mostly relies on centralised servers, which are subject to vulnerabilities and concerns, such as DDoS attacks, censorship, data breaches, or networking errors. However, an emerging protocol named IPFS could avoid these issues by establishing a distributed file-sharing network with no single point of failure.",
+                "In this workshop, we are going to introduce IPFS, explain its main features, and compare it with the current centralised web. It is recommended to have a basic understanding of P2P protocols such as BitTorrent and we encourage you to bring your laptop."
+            ],
+            "organisers": [
+                "dSoc"
+            ],
+            "speakers": [
                 "Victor Gabaldon"
             ],
             "learningOutcomes": [
-                "Understand the basics of blockchain",
-                "Interact with a crypto wallet",
-                "Learn how to inspect a blockchain"
+                "Understand the trajectory of distributed protocols",
+                "Interact with the IPFS network through the official client"
             ],
-            "media": []
+            "media": [
+                "dweb.png"
+            ]
+        },
+        {
+            "title": "Cryptocurrencies, NFTs & Web3 - Lessons from the Metaverse",
+            "date": "2022-05-05T19:15:00",
+            "location": "Physics (46 / 2003)",
+            "abstract": [
+                "This is the crypto talk that you don't want to miss... Covering all the tips and tricks you will need to survive the Crypto revolution.",
+                "Heard about Crypto but never known where to get started? Ever wondered WTF an NFT is? Want to dive into DeFi but not know your ERC-20 from your ERC-4626? This is the talk for you.",
+                "Coming from Southampton's very own Bored Ape & DeFi Degen, this talk aims to provide you with a crash course to help wrap your head around Blockchain, Crypto, NFTs, and web3 more generally. More importantly, Tom will be taking you through the lessons that have been learned from his seven-year journey into this space. To do this, the talk will be divided into a handful of sections focusing on specific topics.",
+                "- A Market Overview: where have we come from, where are we now, and what's next?",
+                "- Crypto Basics: what are the fundamentals that you need to understand?",
+                "- NFT/web3 Basics: how do NFTs fit into this picture and the broader web3 landscape?",
+                "- Getting Started: how can you get started in this space?",
+                "- The Important Lessons: want to avoid some of the common pitfalls/mistakes? Don't miss this!",
+                "To conclude the event, there will be a Q&A as well as the opportunity to network and chat following the event.",
+                "Of course, as always, refershments will be provided. This event will not be live-streamed so be sure to get your free ticket asap to avoid disappointment as we expect this to be a sell-out event. Rumour has it, there may also be a crypto giveaway as well...",
+                "The talk will start promptly at 18:15, Building 100/1001.",
+                "So sign up now and don't miss out on what is set to be a great event!"
+            ],
+            "organisers": [
+                "dSoc",
+                "Tom Phipps"
+            ],
+            "speakers": [
+                "Tom Phipps"
+            ],
+            "learningOutcomes": [
+                "A comprehension of crypto, NFTs, and other Web3 aspects from a market perspective"
+            ],
+            "media": [
+                "tom.png"
+            ]
         }
-        
     ]
 }

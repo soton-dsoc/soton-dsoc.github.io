@@ -3,13 +3,6 @@ import styles from '../styles/EventObject.module.css';
 
 function EventObject(props: any) {
 
-    // var images: StaticImageData[] = [];
-
-    // props.data.media.map((m: string) => {
-    //     const image = require(`../public/${m}`);
-    //     images.push(image);
-    // })
-
     return(
         // if the event is upcoming, display it with its assigned colour
         // <div className={styles.eventBox} style={{ background: `${props.category === "upcoming" ? props.data.colour : ""}`}}>
@@ -32,11 +25,16 @@ function EventObject(props: any) {
                         }
                     </div>
                     <div className={styles.media}>
-                        {/* {
+                        {
                             props.data.media.map((m: string) => 
-                                // <img src={`../public/sy.jpg`} alt="" />
+                                <div className={styles.imageContainer}>
+                                    <Image className={styles.image} src={m} style={{ borderRadius: "10px"}}></Image>
+                                </div>
                             )
-                        } */}
+                        }
+                    </div>
+                    <div style={{ display: `${props.category === "past" ? "block" : "none"}`}}>
+                        <p>This event has passed</p>
                     </div>
                 </div>
                 <div className={styles.right}>

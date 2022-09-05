@@ -17,12 +17,16 @@
 
 .collapsible.active {
     display: flex;
-    gap: 5vw;
+    gap: 3vw;
     flex-direction: row;
 }
 
 .collapsible p {
     font-size: 14px;
+}
+
+.left {
+    max-width: 65%;
 }
 
 .right {
@@ -64,6 +68,20 @@
     font-size: 16px;
 }
 
+.imageContainer {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.media {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 @media only screen and (max-width: 1280px) {
     .title {
         font-size: 20px;
@@ -86,6 +104,14 @@
     .collapsible.active {
         flex-direction: column;
     }
+
+    .left {
+        max-width: none;
+    }
+
+    /* .imageContainer {
+        width: 100%;
+    } */
 }
 
 @media only screen and (max-width: 768px) {
