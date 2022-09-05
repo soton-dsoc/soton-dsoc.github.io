@@ -16,6 +16,7 @@ import jin from '../public/jin.jpeg'
 import jj from '../public/jj.jpg'
 import sy from '../public/sy.jpg'
 import ot from '../public/ot.jpeg'
+import fernando from '../public/fernando.jpg'
 
 function Tilt(props: any): JSX.Element {
     const { options, ...rest } = props;
@@ -125,7 +126,7 @@ function About() {
         },
         {
             name: "Fernando del Aguila",
-            photo: dsoc,
+            photo: fernando,
             role: "DeFi & Blockchain Lead",
             linkedin: "https://www.linkedin.com/in/fdar/"
         },
