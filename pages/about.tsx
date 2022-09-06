@@ -129,13 +129,7 @@ function About() {
             photo: fernando,
             role: "DeFi & Blockchain Lead",
             linkedin: "https://www.linkedin.com/in/fdar/"
-        },
-        {
-            name: "Otmane Yessouf",
-            photo: ot,
-            role: "Marketing Officer",
-            linkedin: "https://www.linkedin.com/in/otmaneyessouf/"
-        },
+        }
     ]
 
     function calculateHash(p: Person): string {
