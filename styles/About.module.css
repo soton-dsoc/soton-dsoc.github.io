@@ -5,7 +5,7 @@
 .aboutContainer {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
     margin-bottom: 80px;
     text-align: justify;
 }
@@ -18,11 +18,11 @@
 }
 
 .upperImg {
-    height: 300px;
+    height: 350px;
 }
 
 .lowerImg {
-    height: 280px;
+    height: 330px;
 }
 
 .upperImg, .lowerImg {

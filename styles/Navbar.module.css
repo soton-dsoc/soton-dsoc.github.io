@@ -30,9 +30,10 @@
     /* max-width: 1280px; */
 }
 
-.left {
+.left, .right {
     display: flex;
     align-items: center;
+    gap: 20px;
 }
  
 .left > img {
@@ -47,10 +48,14 @@
     cursor: pointer;
 }
 
+.nl {
+    display: block;
+}
+
 .pages {
     color: white;
     display: flex;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 .pages > div {
@@ -77,5 +82,11 @@
         font-size: 15px;
         padding-left: 4vw;
         padding-right: 4vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nl {
+        display: none;
     }
 }

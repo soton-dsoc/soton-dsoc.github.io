@@ -26,6 +26,9 @@ h2 {
 
 p {
   font-size: 16px;
+  line-height: 170%;
+  margin-block-start: 20px;
+  margin-block-end: 20px;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -27,11 +27,14 @@ function Navbar() {
                         <div className={styles.pages}>
                             <div onClick={ () => scrollToElement("events") }>Events</div>
                             <div onClick={ () => scrollToElement("about") }>About</div>
-                            {/* <div onClick={ () => window.open("https://dsoc.substack.com/")} style={{marginLeft: ""}}>Newsletter</div> */}
                         </div>
                     </div>
 
                     <div className={styles.right} onClick={ () => window.open("https://www.southampton.ac.uk/")}>
+                        <div className={styles.pages}>
+                            <div onClick={ () => window.open("https://dsoc.substack.com/")} style={{marginLeft: ""}} className={styles.nl}>Newsletter</div>
+                        </div>
+                        
                         <img src={uosLogo.src}></img>
                     </div>
                 </div>
