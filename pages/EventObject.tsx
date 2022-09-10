@@ -19,16 +19,16 @@ function EventObject(props: any) {
                     <div className={styles.abstract}>
                         <div className={styles.title}>Abstract</div>
                         {
-                            props.data.abstract.map((s: string) =>
-                                <p>{s}</p>
+                            props.data.abstract.map((s: string, i: number) =>
+                                <p key={i}>{s}</p>
                             )
                         }
                     </div>
                     <div className={styles.media}>
                         {
-                            props.data.media.map((m: string) => 
-                                <div className={styles.imageContainer}>
-                                    <Image className={styles.image} src={m} style={{ borderRadius: "10px"}}></Image>
+                            props.data.media.map((m: string, i: number) => 
+                                <div className={styles.imageContainer} key={i}>
+                                    <Image className={styles.image} src={m} style={{ borderRadius: "10px"}} alt=""></Image>
                                 </div>
                             )
                         }
@@ -46,24 +46,24 @@ function EventObject(props: any) {
                     <div className={styles.organisers}>
                         <div className={styles.title}>Organisers</div>
                         {
-                            props.data.organisers.map((o: string) =>
-                                <p>{o}</p>
+                            props.data.organisers.map((organiser: string, i: number) =>
+                                <p key={i}>{organiser}</p>
                             )
                         }  
                     </div>
                     <div className={styles.speakers}>
                         <div className={styles.title}>Speakers</div>
                         {
-                            props.data.speakers.map((s: string) => 
-                                <p>{s}</p>
+                            props.data.speakers.map((speaker: string, i: number) => 
+                                <p key={i}>{speaker}</p>
                             )
                         }
                     </div>
                     <div className={styles.learningOutcomes}>
                         <div className={styles.title}>Learning Outcomes</div>
                         {
-                            props.data.learningOutcomes.map((o: string) => 
-                                <p>{o}</p>
+                            props.data.learningOutcomes.map((outcome: string, i: number) => 
+                                <p key={i}>{outcome}</p>
                             )
                         }
                     </div>

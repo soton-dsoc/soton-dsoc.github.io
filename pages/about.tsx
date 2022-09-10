@@ -2,6 +2,7 @@ import styles from '../styles/About.module.css'
 import React, { useEffect, useRef } from 'react';
 import cryptoModule from 'crypto';
 import VanillaTilt from 'vanilla-tilt';
+import Image from 'next/image';
 
 import { StaticImageData } from 'next/image';
 
@@ -166,15 +167,12 @@ function About() {
                             We are working hard toward one of our most important goals: becoming a Decentralised Autonomous Organisation (DAO) by making our own blockchain. We believe this step is crucial to evolving into a truly decentralised society.
                         </p>
                         <p>
-                            But that's not all. Apart from the governance use case, our network will open the door to myriad possibilities: a reward system to motivate each others, an NFT marketplace, a microeconomy, or the tokenisation of virtually anything!
+                            But that&apos;s not all. Apart from the governance use case, our network will open the door to myriad possibilities: a reward system to motivate each others, an NFT marketplace, a microeconomy, or the tokenisation of virtually anything!
                         </p>
 
                         <p>
                             Whether you have just heard about blockchain or are an expert in smart contracts, we would love to have you in the society and attend our events! Join our discord server and stay tuned!
                         </p>
-                        {/* <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        </p> */}
                     </div>
                 </div>
             </div>
@@ -183,32 +181,34 @@ function About() {
 
             <div className={styles.team}>
                 {
-                    team.map((p, i) => 
-                    <Tilt id="tilter" className="box" options={options}>
-                        <div className={styles.flipCard} key={i} onClick={() => window.open(p.linkedin)}>
-                            <div className={styles.fcInner}>
-                                <div className={styles.fcFront}>
-                                    <img src={p.photo.src} className={styles.clipCircle}></img>
-                                    <div className={styles.teamCardText}>
-                                        <div className={styles.teamCardName}>{p.name}</div>
-                                        <div className={styles.teamCardRole}>{p.role}</div>
+                    team.map((p, i) =>
+                        <div key={i}>
+                            <Tilt id="tilter" className="box" options={options}>
+                                <div className={styles.flipCard} key={i} onClick={() => window.open(p.linkedin)}>
+                                    <div className={styles.fcInner}>
+                                        <div className={styles.fcFront}>
+                                            <img src={p.photo.src} className={styles.clipCircle}></img>
+                                            <div className={styles.teamCardText}>
+                                                <div className={styles.teamCardName}>{p.name}</div>
+                                                <div className={styles.teamCardRole}>{p.role}</div>
+                                            </div>
+                                        </div>
+                                        <div className={styles.fcBack}>
+                                            <div className={styles.hashGrid}>
+                                                {
+                                                    calculateHash(p).split("").map((c, i) =>
+                                                        <div key={i} className={styles.char}>{c}</div>
+                                                    )
+                                                }
+                                            </div>
+                                            
+                                            <div className={styles.socialMedia}>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className={styles.fcBack}>
-                                    <div className={styles.hashGrid}>
-                                        {
-                                            calculateHash(p).split("").map((c) =>
-                                                <div className={styles.char}>{c}</div>
-                                            )
-                                        }
-                                    </div>
-                                    
-                                    <div className={styles.socialMedia}>
-                                    </div>
-                                </div>
-                            </div>
+                            </Tilt>
                         </div>
-                    </Tilt>
                     )
                 }
             </div>

@@ -128,8 +128,8 @@ function Events() {
                     <h2 id="upcomingDiv">Upcoming Events</h2>
                         <p style={{ display: `${upcomingEvents.length > 0 ? "none" : "block"}` }}>It seems like there are no events planned right now, please check again soon!</p>
                         {
-                            upcomingEvents.map((e) =>
-                                <div onClick={ () => updateStates(e.key) }>
+                            upcomingEvents.map((e, i) =>
+                                <div key={i} onClick={ () => updateStates(e.key) }>
                                     <EventObject data={e} category="upcoming" active={getState(e.key)}/>
                                 </div>
                             )
@@ -139,8 +139,8 @@ function Events() {
                 <div className={styles.past}>
                     <h2>Past Events</h2>
                         {
-                            pastEvents.map((e) =>
-                                <div onClick={ () => updateStates(e.key) }>
+                            pastEvents.map((e, i) =>
+                                <div key={i} onClick={ () => updateStates(e.key) }>
                                     <EventObject data={e} category="past" active={getState(e.key)}/>
                                 </div>
                             )

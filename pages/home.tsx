@@ -56,7 +56,7 @@ function Home() {
 
             <div className={styles.homeBlockBtns}>
                 <div className={styles.buttonWrapper}>
-                    <a href={configs.discord_invite} target="_blank">
+                    <a target="_blank" rel="noopener noreferrer" href={configs.discord_invite}>
                         <div className={styles.homeBtnJoin}>
                             Join us
                             <img src={discordLogo.src} className={styles.discordLogo}/>
@@ -68,7 +68,7 @@ function Home() {
                         <div style={{ gridArea: '1 / 2 / 2 / 3', background: 'linear-gradient(90deg, #0066FF, #9000A8)' }}></div>
 
                         <div style={{ gridArea: '2 / 2 / 3 / 3', padding: '5px 0', textAlign: 'center', backgroundColor: 'rgba(0,0,0,0.2)' }}>
-                            What's on
+                            What&apos;s on
                         </div>
 
                         <div style={{ gridArea: '1 / 3 / 4 / 4', backgroundColor: '#9000A8', borderTopRightRadius: '5px', borderBottomRightRadius: '5px' }}></div>
