@@ -7,9 +7,6 @@ import linkedinLogo from '../public/linkedin-logo.svg';
 import discordLogo from '../public/discord-logo.svg';
 import dsocLogo from '../public/dsoc-logo-white.svg';
 import emailLogo from '../public/email.png'
-// import EmailForm from './EmailForm';
-import { ColorInput } from '@mantine/core';
-import { config } from 'process';
 
 class Footer extends React.Component {
 
