@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
 
 html,
 body {
@@ -6,7 +7,8 @@ body {
   margin: 0;
   overflow-x: hidden;
   -webkit-text-size-adjust: none; /* this could solve the auto-scaling that safari performs when the font is too small */
-  font-family: 'Inter';
+  /* font-family: 'Inter'; */
+  font-family: 'Robot Mono';
 }
 
 a {
