@@ -6,19 +6,28 @@
     color: blue;
 } */
 
+.wrapper {
+    transition: all 0.3s ease-in-out;
+}
+
+.wrapper:hover {
+    scale: 101%;
+}
+
 .collapsible {
-    display: none;
-    padding: 40px;
     background-color: rgba(0, 0, 0, 0.25);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    overflow: hidden;
+    transition: all 0.8s ease-in-out;
 }
 
-.collapsible.active {
+.collapWrap {
     display: flex;
     gap: 3vw;
     flex-direction: row;
+    margin: 40px;
 }
 
 .collapsible p {
@@ -48,6 +57,7 @@
     background-color: rgba(255, 255, 255, 0.1);
     /* background-color: #333333; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
 }
 
 .box:hover {
