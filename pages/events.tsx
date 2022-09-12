@@ -1,4 +1,6 @@
 import React, { Component, SetStateAction, useEffect, useState } from 'react';
+import Immutable from 'immutable';
+import { Map } from 'immutable'
 import styles from '../styles/Events.module.css';
 import eventsSource from './events.json'
 
@@ -20,7 +22,6 @@ function Events() {
     }
 
     var events: Event[] = [];
-    var states: Map<number, [boolean, React.Dispatch<SetStateAction<boolean>>]> = new Map() // a map between the event key (k) and the pair of state variables (v)
 
     function getEvents() {
         for (let i = 0; i < eventsSource.events.length; i++) {
@@ -48,48 +49,7 @@ function Events() {
         }
     }
 
-    function generateStates() {
-        for (let i = 0; i < events.length; i++) {
-            const [eventState, setState] = React.useState(false);
-            states.set(events[i].key, [eventState, setState])
-        }
-    }
-
-    function toggleEvent(key: number) {
-        const pair = states.get(key);
-
-        const eventState = pair?.[0];
-        const setState = pair?.[1];
-        
-        if (eventState != undefined && setState != undefined) {
-            setState(!eventState);
-        }
-    }
- 
-    function updateStates(key: number) {
-        toggleEvent(key);
-
-        for (let i = 0; i < events.length; i++) {
-            const pair = states.get(i);
-
-            const eventState = pair?.[0];
-            const setState = pair?.[1];
-
-            if (eventState == true && setState && i != key) {
-                setState(false);
-            }
-        }
-    }
-
-    function getState(key: number): boolean {
-        const pair = states.get(key);
-        const eventState = pair?.[0];
-        if (eventState) return eventState
-        return false;
-    }
-
     getEvents();
-    generateStates();
 
     var upcomingEvents: Event[] = [];
     var pastEvents: Event[] = [];
@@ -129,8 +89,8 @@ function Events() {
                         <p style={{ display: `${upcomingEvents.length > 0 ? "none" : "block"}` }}>It seems like there are no events planned right now, please check again soon!</p>
                         {
                             upcomingEvents.map((e, i) =>
-                                <div key={i} onClick={ () => updateStates(e.key) }>
-                                    <EventObject data={e} category="upcoming" active={getState(e.key)}/>
+                                <div key={i}>
+                                    <EventObject data={e} category="upcoming"/>
                                 </div>
                             )
                         }
@@ -140,8 +100,8 @@ function Events() {
                     <h2>Past Events</h2>
                         {
                             pastEvents.map((e, i) =>
-                                <div key={i} onClick={ () => updateStates(e.key) }>
-                                    <EventObject data={e} category="past" active={getState(e.key)}/>
+                                <div key={i}>
+                                    <EventObject data={e} category="past"/>
                                 </div>
                             )
                         }
