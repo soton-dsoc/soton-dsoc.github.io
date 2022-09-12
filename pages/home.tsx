@@ -1,6 +1,7 @@
 import configs from '../config'
 import styles from '../styles/Home.module.css'
 import discordLogo from '../public/discord-logo.svg'
+import { useEffect } from 'react';
 
 function Home() {
 
@@ -10,7 +11,7 @@ function Home() {
         });
     }
     
-    if (typeof window !== "undefined") {
+    useEffect(() => {
         if (screen.width > 1000) {
             let homeDiv = document.getElementById("home");
 
@@ -37,7 +38,7 @@ function Home() {
                 }
             })
         }
-    }
+    })
 
     return (
         // <div className={styles.homeWrapper}>
