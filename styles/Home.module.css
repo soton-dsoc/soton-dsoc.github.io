@@ -1,12 +1,8 @@
 .home {
-    /* width: 100vw; */
     height: 100vh;
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    /* position: absolute; */
-    /* padding-left: 70px;
-    padding-right: 70px; */
 }
 
 .homeBlockText {
@@ -35,12 +31,10 @@
     border-radius: 5px;
     padding: 10px 70px 10px 70px;
     font-weight: 800;
-    /* font-size: 25px; */
     margin-top: 10px;
     margin-bottom: 10px;
     cursor: pointer;
     user-select: none;
-    /* box-shadow: ; */
 
     transition: hover 1s;
     background: linear-gradient(90deg, #9000A8, #0066FF);
@@ -88,6 +82,10 @@
 .subtitle {
     font-size: 35px;
     font-weight: 300;
+}
+
+.homeBtnJoin, .homeBtnWhatsOn {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media only screen and (max-width: 1280px) {
@@ -166,5 +164,13 @@
     .discordLogo {
         height: 16px;
         margin-left: 12px;
+    }
+
+    .homeBlockText {
+        flex: 0.6;
+    }
+
+    .homeBlockBtns {
+        flex: 0.2;
     }
 }
