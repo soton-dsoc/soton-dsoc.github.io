@@ -157,40 +157,68 @@
             "title": "ECSS Expo",
             "date": "2022-09-27T14:30:00",
             "location": "Turner Sims Concert Hall",
-            "abstract": [],
-            "organisers": [],
-            "speakers": [],
-            "learningOutcomes": [],
+            "abstract": [
+                "A welcome event organised by ECSS to present the societies in Electronics and Computer Science."
+            ],
+            "organisers": [
+                "ECSS"
+            ],
+            "speakers": [
+                "TBD"
+            ],
+            "learningOutcomes": [
+                "Get to know about the different societies in the ECS field"
+            ],
             "media": []
         },
         {
             "title": "SUSU Freshers Fair",
-            "date": "2022-09-30T10:00:00",
+            "date": "2022-09-27T14:30:00",
             "location": "SUSU Building 40, 42",
-            "abstract": [],
-            "organisers": [],
-            "speakers": [],
-            "learningOutcomes": [],
+            "abstract": [
+                "A welcome event organised by the Students' Union where students will be get to know about the different societies on campus and join those in which they are interested."
+            ],
+            "organisers": [
+                "SUSU"
+            ],
+            "speakers": [
+                "Not a talk"
+            ],
+            "learningOutcomes": [
+                "Get to know and join any society on campus"
+            ],
             "media": []
         },
         {
-            "title": "FoT x dSoc Welcome Event",
-            "date": "2022-10-04T18:15:00",
-            "location": "Physics (46 / 3001)",
+            "title": "ECSS Expo",
+            "date": "2022-09-30T10:00:00",
+            "location": "Turner Sims Concert Hall",
             "abstract": [],
-            "organisers": [],
-            "speakers": [],
-            "learningOutcomes": [],
+            "organisers": [
+                "ECSS"
+            ],
+            "speakers": [
+                "TBD"
+            ],
+            "learningOutcomes": [
+                "Get to know about the different societies in the ECS field"
+            ],
             "media": []
         },
         {
-            "title": "Freshers Pub Quiz",
-            "date": "2022-10-07T19:30:00",
-            "location": "Brewhouse & Kitchen",
-            "abstract": [],
-            "organisers": [],
-            "speakers": [],
-            "learningOutcomes": [],
+            "title": "ECSS Expo",
+            "date": "2022-09-27T14:30:00",
+            "location": "Turner Sims Concert Hall",
+            "abstract": "",
+            "organisers": [
+                "ECSS"
+            ],
+            "speakers": [
+                "TBD"
+            ],
+            "learningOutcomes": [
+                "Get to know about the different societies in the ECS field"
+            ],
             "media": []
         }
     ]

@@ -27,14 +27,16 @@
 }
 
 .left {
-    max-width: 65%;
+    width: 70%;
+    /* flex: 1 1 auto; */
 }
 
 .right {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
+    width: 30%;
+    /* flex: 1 1 auto; */
 }
 
 .box {

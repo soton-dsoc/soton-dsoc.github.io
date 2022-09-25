@@ -1,6 +1,4 @@
 import React, { Component, SetStateAction, useEffect, useState } from 'react';
-import Immutable from 'immutable';
-import { Map } from 'immutable'
 import styles from '../styles/Events.module.css';
 import eventsSource from './events.json'
 

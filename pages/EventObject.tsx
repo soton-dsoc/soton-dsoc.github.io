@@ -7,6 +7,7 @@ function EventObject(props: any) {
     const eventData = props.data;
     const [ active, setActive ] = React.useState(false);
 
+    const key: number = eventData ? eventData.key : "";
     const title: string = eventData ? eventData.title : "";
     const date: string = eventData ? eventData.date.toString() : "";
     const location: string = eventData ? eventData.location : "";
@@ -17,8 +18,9 @@ function EventObject(props: any) {
     const media = eventData ? eventData.media : []
 
     function getHeight() {
-        const elem = document.getElementById(styles.collapWrap);
-        return elem?.clientHeight
+        const elem = document.getElementById(`collapsible${key}`);
+        console.log(elem?.scrollHeight);
+        return elem?.scrollHeight;
     }
 
     return(
@@ -27,7 +29,7 @@ function EventObject(props: any) {
                 <div className={styles.title}>{title}</div>
                 <div className={styles.date}>{date}</div>
             </div>
-            <div className={`${styles.collapsible} ${active ? styles.active : ""}`} style={{ maxHeight: active ? getHeight() : "0px"}}>
+            <div className={`${styles.collapsible} ${active ? styles.active : ""}`} id={`collapsible${key}`} style={{ maxHeight: active ? getHeight() : 0}}>
                 <div className={styles.collapWrap} id={styles.collapWrap}>
                     <div className={styles.left}>
                         <div className={styles.abstract}>
