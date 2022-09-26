@@ -116,7 +116,11 @@
     }
 
     .left {
-        max-width: none;
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
     }
 }
 
