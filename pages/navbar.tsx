@@ -30,12 +30,12 @@ function Navbar() {
                         </div>
                     </div>
 
-                    <div className={styles.right} onClick={ () => window.open("https://www.southampton.ac.uk/")}>
+                    <div className={styles.right}>
                         <div className={styles.pages}>
                             <div onClick={ () => window.open("https://dsoc.substack.com/")} style={{marginLeft: ""}} className={styles.nl}>Newsletter</div>
                         </div>
                         
-                        <img src={uosLogo.src}></img>
+                        <img src={uosLogo.src}  onClick={ () => window.open("https://www.southampton.ac.uk/")}></img>
                     </div>
                 </div>
         </div>
