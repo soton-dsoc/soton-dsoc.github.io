@@ -25,7 +25,8 @@ function EventObject(props: any) {
 
     return(
         <div className={styles.wrapper}>
-            <div className={styles.box} style={{ background: `${props.category === "upcoming" ? "linear-gradient(90deg, #9000A8, #0066FF)" : ""}`}} onClick={() => setActive(!active)}>
+            {/* <div className={styles.box} style={{ background: `${props.category === "upcoming" ? "linear-gradient(90deg, #9000A8, #0066FF)" : ""}`}} onClick={() => setActive(!active)}> */}
+            <div className={`${styles.box} ${props.category === "upcoming" ? styles.upcoming : ""}`} onClick={() => setActive(!active)}>
                 <div className={styles.title}>{title}</div>
                 <div className={styles.date}>{date}</div>
             </div>

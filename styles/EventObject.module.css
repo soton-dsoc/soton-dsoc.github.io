@@ -57,6 +57,14 @@
     cursor: pointer;
 }
 
+.box.upcoming {
+    background: linear-gradient(90deg, hsl(291, 100%, 33%), hsl(216, 100%, 50%));
+}
+
+.box.upcoming:hover {
+    filter: brightness(1.25);
+}
+
 .title {
     font-size: 24px;
     font-weight: 700;

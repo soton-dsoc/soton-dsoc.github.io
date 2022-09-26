@@ -167,7 +167,7 @@ function About() {
                             We are working hard toward one of our most important goals: becoming a Decentralised Autonomous Organisation (DAO) by making our own blockchain. We believe this step is crucial to evolving into a truly decentralised society.
                         </p>
                         <p>
-                            But that&apos;s not all. Apart from the governance use case, our network will open the door to myriad possibilities: a reward system to motivate each others, an NFT marketplace, a microeconomy, or the tokenisation of virtually anything!
+                            But that&apos;s not all. Apart from the governance use case, our network will open the door to a lot of possibilities: a reward system to motivate each others, an NFT marketplace, a microeconomy, or the tokenisation of virtually anything!
                         </p>
 
                         <p>
