@@ -16,8 +16,9 @@ import dsoc from '../public/dsoc-logo-white.svg'
 import jin from '../public/jin.jpeg'
 import jj from '../public/jj.jpg'
 import sy from '../public/sy.jpg'
-import ot from '../public/ot.jpeg'
 import fernando from '../public/fernando.jpg'
+import deni from '../public/deni.jpeg'
+import ibi from '../public/ibi.jpeg'
 
 function Tilt(props: any): JSX.Element {
     const { options, ...rest } = props;
@@ -128,9 +129,21 @@ function About() {
         {
             name: "Fernando del Aguila",
             photo: fernando,
-            role: "DeFi & Blockchain Lead",
+            role: "Associate",
             linkedin: "https://www.linkedin.com/in/fdar/"
-        }
+        },
+        {
+            name: "Denitsa Hadzhiyska",
+            photo: deni,
+            role: "Marketing Officer",
+            linkedin: "https://www.linkedin.com/in/denitsa-hadzhiyska/"
+        },
+        {
+            name: "Ibolya Szenes",
+            photo: ibi,
+            role: "Research Lead - Finance",
+            linkedin: "https://www.linkedin.com/in/ibolya-szenes-a005b31a5/"
+        },
     ]
 
     function calculateHash(p: Person): string {
@@ -147,7 +160,7 @@ function About() {
                 <div className={styles.upperContainer}>
                     <div className={styles.aboutText}>
                         <p>
-                            Started by a group of freshers in September 2021, the University of Southampton Decentralised Society (dSoc) was born to establish a connecting hub between students interested in the philosophy of decentralisation. The motivation behind the society was to create a space where like-minded students could learn from each others, build a friendly and skilled community, and develop activities and projects in the Web3 ecosystem.
+                            Founded by a group of freshers in September 2021, the University of Southampton Decentralised Society (dSoc) aims to establish a hub for students and professionals interested in the philosophy of decentralisation. Empowering its members with knowledge, project and research opportunities, the society strives to become a platform for collaboration in the space.
                         </p>
 
                         <p>

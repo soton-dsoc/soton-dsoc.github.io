@@ -34,13 +34,13 @@
     margin-bottom: 100px;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4, 220px);
+    grid-template-columns: repeat(4, 250px);
     gap: 40px;
 }
 
 .flipCard {
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     border-style: hidden;
     background-color: transparent;
     perspective: 1000px;
@@ -71,7 +71,7 @@
 .fcFront {
     background-color: rgba(255, 255, 255, 0.1);
     /* background-color: #333333; */
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -115,12 +115,11 @@
 }
 
 .fcFront > img {
-    margin-top: 10px;
-    height: 100px;
+    height: 140px;
 }
 
 .clipCircle  {
-    clip-path: circle(50px at center);
+    clip-path: circle(70px at center);
 }
 
 .teamCardText {
@@ -136,7 +135,7 @@
 }
 
 .teamCardRole {
-    font-size: 11px;
+    font-size: 13px;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -153,13 +152,13 @@
         margin-bottom: 60px;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(4, 200px);
+        grid-template-columns: repeat(4, 250px);
         gap: 30px;
     }
 
     .flipCard {
-        height: 200px;
-        width: 200px;
+        height: 250px;
+        width: 250px;
     }
 
     .fcFront {
@@ -168,7 +167,7 @@
 
     .fcFront > img {
         margin-top: 5px;
-        height: 90px;
+        height: 150px;
     }
 
     .teamCardName {
@@ -180,7 +179,7 @@
     }
     
     .clipCircle  {
-        clip-path: circle(45px at center);
+        clip-path: circle(70px at center);
     }
 
     .char {
@@ -208,7 +207,7 @@
     }
 
     .team {
-        grid-template-columns: repeat(2, 200px);
+        grid-template-columns: repeat(2, 250px);
     }
 }
 
