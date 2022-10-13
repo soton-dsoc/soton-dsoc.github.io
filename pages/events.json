@@ -235,6 +235,30 @@
             "media": [
                 "4.png"
             ]
+        },
+        {
+            "title": "Intro to Web3",
+            "date": "2022-10-18T18:00:00",
+            "location": "Centenary Building (100 / 1001)",
+            "abstract": [
+                "Fish on Toast and the Decentralised Society have come together to help you explore the Web3 space. Learn how to get started and what it takes.",
+                "Our session will feature Tom Humber who is a Special Projects lead at Parity Technologies. Special projects is a sub-department of Ecosystem Development, and primarily focus on schemes that fall outside the traditional mandate of Growth or Enterprise. This includes, CSR schemes, technical competitions and mergers and acquisitions.",
+                "The session will run for 45 minutes followed by Q&A. You will also have a networking opportunity afterwards."
+            ],
+            "organisers": [
+                "dSoc",
+                "Fish on Toast"
+            ],
+            "speakers": [
+                "Tom Humber"
+            ],
+            "learningOutcomes": [
+                "Get to know each other",
+                "Learn interesting facts about blockchain"
+            ],
+            "media": [
+                "intro_web3.png"
+            ]
         }
     ]
 }

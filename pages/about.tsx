@@ -19,6 +19,7 @@ import sy from '../public/sy.jpg'
 import fernando from '../public/fernando.jpg'
 import deni from '../public/deni.jpeg'
 import ibi from '../public/ibi.jpeg'
+import james from '../public/james.jpg'
 
 function Tilt(props: any): JSX.Element {
     const { options, ...rest } = props;
@@ -98,7 +99,7 @@ function About() {
         },
         {
             name: "James Tidbury",
-            photo: dsoc,
+            photo: james,
             role: "Financial Officer",
             linkedin: "https://www.linkedin.com/in/james-tidbury-b63b81227/"
         },
@@ -109,10 +110,22 @@ function About() {
             linkedin: "https://www.linkedin.com/in/oliver-f-83123a178/"
         },
         {
+            name: "Denitsa Hadzhiyska",
+            photo: deni,
+            role: "Marketing Officer",
+            linkedin: "https://www.linkedin.com/in/denitsa-hadzhiyska/"
+        },
+        {
             name: "Jie-Jie Chan",
             photo: jj,
             role: "DeFi Officer",
             linkedin: "https://www.linkedin.com/in/jia-jie-chen-003886207/"
+        },
+        {
+            name: "Ibolya Szenes",
+            photo: ibi,
+            role: "Research Lead - Finance",
+            linkedin: "https://www.linkedin.com/in/ibolya-szenes-a005b31a5/"
         },
         {
             name: "Jin Tanaka",
@@ -131,18 +144,6 @@ function About() {
             photo: fernando,
             role: "Associate",
             linkedin: "https://www.linkedin.com/in/fdar/"
-        },
-        {
-            name: "Denitsa Hadzhiyska",
-            photo: deni,
-            role: "Marketing Officer",
-            linkedin: "https://www.linkedin.com/in/denitsa-hadzhiyska/"
-        },
-        {
-            name: "Ibolya Szenes",
-            photo: ibi,
-            role: "Research Lead - Finance",
-            linkedin: "https://www.linkedin.com/in/ibolya-szenes-a005b31a5/"
         },
     ]
 
