@@ -259,6 +259,34 @@
             "media": [
                 "intro_web3.png"
             ]
+        },
+        {
+            "title": "Distributed Web",
+            "date": "2022-10-25T18:00:00",
+            "location": "Centenary Building (100 / 1001)",
+            "abstract": [
+                "The Decentralised Society (dSoc) is organising a new event for next Tuesday 25th where you will learn about other aspects of Web3 that are often disregarded, in particular, the Distributed Web. The talk is targeted towards any audience.",
+                "The current web relies on a centralised system, which comes with several issues such as censorship, single point of failure, lack of net neutrality, and no real digital sovereignty among many others.",
+                "The talk will be a journey through the different P2P protocols that have emerged in the past (and are still in use today) until reaching the InterPlanetary File System (IPFS), an exciting project that has the potential to change the web forever.",
+                "And that’s not all, there will be FREE PIZZA 🍕 AND DRINKS 🍹 PROVIDED!!",
+                "You can get your free ticket here: https://www.eventbrite.co.uk/e/distributed-web-a-journey-through-the-forgotten-reaches-of-web3-tickets-445099995067",
+                "See you on Tuesday at 6 PM at the Centenary Building (100 / 1001)!"
+            ],
+            "organisers": [
+                "dSoc"
+            ],
+            "speakers": [
+                "Victor Gabaldon"
+            ],
+            "learningOutcomes": [
+                "Problems of the current web",
+                "P2P networks",
+                "BitTorrent",
+                "IPFS"
+            ],
+            "media": [
+                "finaldweb.png"
+            ]
         }
     ]
 }
