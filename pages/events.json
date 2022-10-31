@@ -287,6 +287,26 @@
             "media": [
                 "finaldweb.png"
             ]
+        },
+        {
+            "title": "Halloween Social",
+            "date": "2022-10-31T18:00:00",
+            "location": "Centenary Building (100 / 1001)",
+            "abstract": [
+                "dSoc is pleased to announce our next big social of this semester. Something untoward has happened within our society... where has our President gone? It has become apparent our President has been captured by a ghost *da da daaaaaa*. We need your help to free our President by coming along to Building 46 / 3001 (LT / A) at 6:45 pm for a prompt 7 pm start. We will have some spooky Halloween-themed team games, including apple bobbing, donut eating, quiz and karaoke. No Halloween social wouldn't come with tricks or treats so look out for friendly scares, sweets and CRYPTO! Yes, you heard it right you can win free ETH by coming to the event. All tickets are free and must be scanned to be eligible in winning ETH. Tickets are limited and book now to avoid disappointment closer to the event! This is event is open to all students of the University of Southampton. We look forward to seeing you there!"
+            ],
+            "organisers": [
+                "dSoc"
+            ],
+            "speakers": [
+                ""
+            ],
+            "learningOutcomes": [
+                ""
+            ],
+            "media": [
+                "halloween.png"
+            ]
         }
     ]
 }
