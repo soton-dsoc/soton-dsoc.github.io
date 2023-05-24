@@ -86,64 +86,28 @@ function About() {
     // TODO: display (a portion of) hash checksum in the back of the card
     const team: Person[] = [
         {
-            name: "German Nikolishin",
-            photo: german,
-            role: "President",
-            linkedin: "https://www.linkedin.com/in/skymanone/"
-        },
-        {
             name: "Victor Gabaldon",
             photo: victor,
-            role: "Vice President",
+            role: "President",
             linkedin: "https://www.linkedin.com/in/victor-gabaldon/"
-        },
-        {
-            name: "James Tidbury",
-            photo: james,
-            role: "Financial Officer",
-            linkedin: "https://www.linkedin.com/in/james-tidbury-b63b81227/"
         },
         {
             name: "Olly Ferrier",
             photo: olly,
-            role: "Events Officer",
+            role: "Vice President",
             linkedin: "https://www.linkedin.com/in/oliver-f-83123a178/"
         },
         {
-            name: "Denitsa Hadzhiyska",
-            photo: deni,
-            role: "Marketing Officer",
-            linkedin: "https://www.linkedin.com/in/denitsa-hadzhiyska/"
+            name: "James Tidbury",
+            photo: james,
+            role: "Treasurer",
+            linkedin: "https://www.linkedin.com/in/james-tidbury-b63b81227/"
         },
         {
-            name: "Jie-Jie Chan",
-            photo: jj,
-            role: "DeFi Officer",
-            linkedin: "https://www.linkedin.com/in/jia-jie-chen-003886207/"
-        },
-        {
-            name: "Ibolya Szenes",
-            photo: ibi,
-            role: "Research Lead - Finance",
-            linkedin: "https://www.linkedin.com/in/ibolya-szenes-a005b31a5/"
-        },
-        {
-            name: "Jin Tanaka",
-            photo: jin,
-            role: "Graphics Designer",
-            linkedin: "https://www.linkedin.com/in/jin-tanaka-4013a01b9/"
-        },
-        {
-            name: "Saarujan Yogeswaran",
-            photo: sy,
-            role: "Graphics Designer",
-            linkedin: "https://www.linkedin.com/in/saarujan/"
-        },
-        {
-            name: "Fernando del Aguila",
-            photo: fernando,
-            role: "Associate",
-            linkedin: "https://www.linkedin.com/in/fdar/"
+            name: "German Nikolishin",
+            photo: german,
+            role: "Associated",
+            linkedin: "https://www.linkedin.com/in/skymanone/"
         },
     ]
 
