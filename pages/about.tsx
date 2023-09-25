@@ -12,6 +12,13 @@ import audience from '../public/audience.jpg'
 import german from '../public/german.jpg';
 import victor from '../public/victor_cropped.jpg';
 import olly from '../public/olly.jpg'
+import dsoc from '../public/dsoc-logo-white.svg'
+import jin from '../public/jin.jpeg'
+import jj from '../public/jj.jpg'
+import sy from '../public/sy.jpg'
+import fernando from '../public/fernando.jpg'
+import deni from '../public/deni.jpeg'
+import ibi from '../public/ibi.jpeg'
 import james from '../public/james.jpg'
 
 function Tilt(props: any): JSX.Element {
@@ -127,11 +134,11 @@ function About() {
 
                     </div>
 
-                    <Image src={dsocEvent.src} className={styles.upperImg} alt=""/>
+                    <img src={dsocEvent.src} className={styles.upperImg}/>
                 </div>
 
                 <div className={styles.lowerContainer}>
-                    <Image src={audience.src} className={styles.lowerImg} alt=""/>
+                    <img src={audience.src} className={styles.lowerImg}/>
 
                     <div className={styles.aboutText}>
                         <p>
@@ -158,7 +165,7 @@ function About() {
                                 <div className={styles.flipCard} key={i} onClick={() => window.open(p.linkedin)}>
                                     <div className={styles.fcInner}>
                                         <div className={styles.fcFront}>
-                                            <Image src={p.photo.src} className={styles.clipCircle} alt=""></Image>
+                                            <img src={p.photo.src} className={styles.clipCircle}></img>
                                             <div className={styles.teamCardText}>
                                                 <div className={styles.teamCardName}>{p.name}</div>
                                                 <div className={styles.teamCardRole}>{p.role}</div>

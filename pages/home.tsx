@@ -1,7 +1,6 @@
 import configs from '../config'
 import styles from '../styles/Home.module.css'
 import discordLogo from '../public/discord-logo.svg'
-import Image from 'next/image'
 import { useEffect } from 'react';
 
 function Home() {
@@ -61,7 +60,7 @@ function Home() {
                     <a target="_blank" rel="noopener noreferrer" href={configs.discord_invite}>
                         <div className={styles.homeBtnJoin}>
                             Join us
-                            <Image alt="" src={discordLogo.src} className={styles.discordLogo}/>
+                            <img src={discordLogo.src} className={styles.discordLogo}/>
                         </div>
                     </a>
 

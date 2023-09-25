@@ -2,7 +2,6 @@ import styles from '../styles/Navbar.module.css';
 import React, { useEffect, useState } from 'react';
 import dsocLogo from '../public/dsoc-logo-white.svg'
 import uosLogo from '../public/uos_logo.svg'
-import Image from 'next/image'
 
 function Navbar() {
 
@@ -22,7 +21,7 @@ function Navbar() {
         <div className={styles.Navbar} style={scroll ? { boxShadow: '0px 5px 20px 0px black', backgroundColor: 'rgba(0, 0, 0, 0.25)' } : undefined}>
                 <div className={styles.contentWrapper}>
                     <div className={styles.left}>
-                        <Image alt="" src={dsocLogo.src} onClick={ () => scrollToElement("home") } />
+                        <img src={dsocLogo.src} onClick={ () => scrollToElement("home") }></img>
 
                         {/* desktop (> 480) */}
                         <div className={styles.pages}>
@@ -36,7 +35,7 @@ function Navbar() {
                             <div onClick={ () => window.open("https://dsoc.substack.com/")} style={{marginLeft: ""}} className={styles.nl}>Newsletter</div>
                         </div>
                         
-                        <Image alt="" src={uosLogo.src}  onClick={ () => window.open("https://www.southampton.ac.uk/")} />
+                        <img src={uosLogo.src}  onClick={ () => window.open("https://www.southampton.ac.uk/")}></img>
                     </div>
                 </div>
         </div>
