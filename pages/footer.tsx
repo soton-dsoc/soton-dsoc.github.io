@@ -1,6 +1,7 @@
 import styles from '../styles/Footer.module.css'
 import React from 'react';
 import configs from '../config'
+import Image from 'next/image'
 
 import twitterLogo from '../public/twitter-logo.svg';
 import linkedinLogo from '../public/linkedin-logo.svg';
@@ -52,10 +53,10 @@ class Footer extends React.Component {
                     <div className={styles.left}>
                         <div className={styles.top}>
                             <div className={styles.socialBox}>
-                                <img alt="" src={twitterLogo.src} onClick={()=> window.open(configs.twitter, "_blank")} style={{ cursor: "pointer" }}/>
-                                <img alt="" src={discordLogo.src} onClick={()=> window.open(configs.discord_invite, "_blank")} style={{ cursor: "pointer" }}/>
-                                <img alt="" src={linkedinLogo.src} onClick={()=> window.open(configs.linkedin, "_blank")} style={{ cursor: "pointer" }}/>
-                                <img alt="" src={emailLogo.src} onClick={()=> window.open(configs.email, "_blank")} style={{ cursor: "pointer" }}/>
+                                <Image alt="" src={twitterLogo.src} onClick={()=> window.open(configs.twitter, "_blank")} style={{ cursor: "pointer" }}/>
+                                <Image alt="" src={discordLogo.src} onClick={()=> window.open(configs.discord_invite, "_blank")} style={{ cursor: "pointer" }}/>
+                                <Image alt="" src={linkedinLogo.src} onClick={()=> window.open(configs.linkedin, "_blank")} style={{ cursor: "pointer" }}/>
+                                <Image alt="" src={emailLogo.src} onClick={()=> window.open(configs.email, "_blank")} style={{ cursor: "pointer" }}/>
                             </div>
                         </div>
                         <div className={styles.bottom}>
@@ -69,7 +70,7 @@ class Footer extends React.Component {
 
                     <div className={styles.right}>
                         <div className={styles.top}>
-                            <img src={dsocLogo.src} className={styles.dsocLogo}/>
+                            <Image alt="" src={dsocLogo.src} className={styles.dsocLogo}/>
                         </div>
                         <div className={styles.bottom}>
                             <div onClick={ () => window.open("https://dsoc.substack.com/")} style={{ cursor: "pointer"}}>Newsletter</div>
