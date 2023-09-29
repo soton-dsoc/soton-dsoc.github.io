@@ -326,6 +326,51 @@
             "media": [
                 "ecss-expo-23.png"
             ]
+        },
+        {
+            "title": "FoT Welcome Event",
+            "date": "2023-10-03T18:00:00",
+            "location": "46 / 3001",
+            "abstract": [
+                "Join us for an introductory talk exploring the basics of blockchain. As part of the session, we will explore the origins of blockchain as well as different layers of blockchain stack.",
+                "By the end of the talk, you will grasp the fundamentals of cryptography, consensus, and computer networking allowing you to explore a more complex concepts.",
+                "Additional reading will also be provided, and slides will be available before the next session"
+            ],
+            "organisers": [
+                "Fish on Toast"
+            ],
+            "speakers": [
+                "Victor Gabaldon",
+                "German Nikolishin"
+            ],
+            "learningOutcomes": [
+                "The purpose of the Decentralised Society and enterprise opportunities in web3"
+            ],
+            "media": [
+                "fot_event.png"
+            ]
+        },
+        {
+            "title": "Blockchain: A humble introduction",
+            "location": "46 / 2005",
+            "date": "2023-10-05T18:00:00",
+            "abstract": [
+                "Join us for an introductory talk exploring the basics of blockchain. As part of the session, we will explore the origins of blockchain as well as different layers of blockchain stack.",
+                "By the end of the talk, you will grasp the fundamentals of cryptography, consensus, and computer networking allowing you to explore a more complex concepts.",
+                "Additional reading will also be provided, and slides will be available before the next session"
+            ],
+            "organisers": [
+                "dSoc"
+            ],
+            "speakers": [
+                "German Nikolishin"
+            ],
+            "learningOutcomes": [
+                "Fundamentals of cryptography, consensus, and computer networking in the context of blockchain technology"
+            ],
+            "media": [
+                "blockchain_humle_intro.png"
+            ]
         }
     ]
 }
