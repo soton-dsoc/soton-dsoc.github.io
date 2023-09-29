@@ -332,19 +332,18 @@
             "date": "2023-10-03T18:00:00",
             "location": "46 / 3001",
             "abstract": [
-                "Join us for an introductory talk exploring the basics of blockchain. As part of the session, we will explore the origins of blockchain as well as different layers of blockchain stack.",
-                "By the end of the talk, you will grasp the fundamentals of cryptography, consensus, and computer networking allowing you to explore a more complex concepts.",
-                "Additional reading will also be provided, and slides will be available before the next session"
+                "A great opportunity to find out about tech and enterprise related societies on campus and how to get involved"
             ],
             "organisers": [
                 "Fish on Toast"
             ],
             "speakers": [
                 "Victor Gabaldon",
-                "German Nikolishin"
+                "German Nikolishin",
+                "Others"
             ],
             "learningOutcomes": [
-                "The purpose of the Decentralised Society and enterprise opportunities in web3"
+                "The purpose of the Decentralised Society and enterprise opportunities on campus"
             ],
             "media": [
                 "fot_event.png"
