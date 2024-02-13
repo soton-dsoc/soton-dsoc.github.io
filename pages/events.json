@@ -370,6 +370,96 @@
             "media": [
                 "blockchain_humle_intro.png"
             ]
+        },
+        {
+            "title": "ETH London Hackathon",
+            "location": "8th Northumberland Ave, London",
+            "date": "2023-10-27T15:00:00",
+            "abstract": [
+                "We have partnered with Encode Club (https://www.encode.club/) to bring you an incredible opportunity to start building in web3 🚀. ETH London Hackathon will be taking place at the end of October in the heart of the Capital.",
+                "We are looking forward to form a group of students interested in joining the hackathon and participate in a web3 project. Whether you have just heard about blockchain or you are an expert on the field, this can be the perfect opportunity for you to get hands-on experience!"
+            ],
+            "organisers": [
+                "Encode Club"
+            ],
+            "speakers": [
+                ""
+            ],
+            "learningOutcomes": [
+                "Hackathon experience"
+            ],
+            "media": [
+                "eth_london.png"
+            ]
+        },
+        {
+            "title": "Practical BFT",
+            "location": "100 / 5013",
+            "date": "2023-11-14T18:00:00",
+            "abstract": [
+                "Practical Byzantine Fault Tolerance (PBFT) stands as a pioneering concept in the realm of distributed computing, ensuring the robustness and trustworthiness of decentralised systems.",
+                "This talk introduces a replication algorithm that can tolerate Byzantine faults. BFT algorithms will be increasingly important in the future because malicious attacks and software errors are increasingly common and can cause faulty nodes to exhibit arbitrary behaviour.",
+                "Whereas previous algorithms assumed a synchronous system or were too slow to be used in practice, the algorithm described in this talk is practical: it works in asynchronous environments like the Internet and incorporates several important optimisations that improve the response time of previous algorithms by more than an order of magnitude.",
+                "By delving into the details of PBFT, this talk aims to contribute to a deeper understanding of its significance in ensuring fault tolerance and resilience in distributed computing environments."
+            ],
+            "organisers": [
+                "dSoc"
+            ],
+            "speakers": [
+                "George Giamouridis"
+            ],
+            "learningOutcomes": [
+                "Distributed computing algorithms"
+            ],
+            "media": [
+                "Practical_BFT.jpg"
+            ]
+        },
+        {
+            "title": "U-Hack Hackathon",
+            "location": "Online",
+            "date": "2024-02-10T00:00:00",
+            "abstract": [
+                "Get ready to unleash your creativity and innovation! We are thrilled to present U Hack! – an exceptional hackathon experience designed by students, for students.",
+                "U Hack! is your chance to dive into the world of innovation and problem-solving. We invite you to form teams of 5 members each and participate in an electrifying hackathon that transcends boundaries.",
+                "Registrations open from mid-January and close at the stroke of midnight on February 9th. Don't miss this window of opportunity to be a part of something extraordinary."
+            ],
+            "organisers": [
+                "uhack.xyz"
+            ],
+            "speakers": [
+                ""
+            ],
+            "learningOutcomes": [
+                "Hackathon experience"
+            ],
+            "media": [
+                "uhack.png"
+            ]
+        },
+        {
+            "title": "Encode Club's AI Hackathon",
+            "location": "WeWork Canary Wharf",
+            "date": "2024-03-08T15:00:00",
+            "abstract": [
+                "We are excited to announce a new hackathon by Encode Club, AI Hackathon London 🤖 💻 🚀 ! It is free to participate and will take place from 8th to 10th March at WeWork Canary Wharf co-working space.",
+                "Alongside AISoc, we are looking to form a few teams from Southampton 🫂 that can build something amazing! No matter how experienced you are, this is a great opportunity to sharpen and showcase your skills, work in a team, and network with professionals, experts and industry leaders.",
+                "There will also be bounties and prizes 🤑 💸 for the best projects, so keep an eye on our announcements and https://www.encode.club/ai-hackathon!",
+                "If you're interested you can easily register here (please use your university email 😃 ) https://encodeclub.typeform.com/aihackreg#source=AIH24SOUTHAMPTONB",
+                "Stay tuned and happy coding!"
+            ],
+            "organisers": [
+                "Encode Club"
+            ],
+            "speakers": [
+                ""
+            ],
+            "learningOutcomes": [
+                "Hackathon experience"
+            ],
+            "media": [
+                "ai_encode.jpg"
+            ]
         }
     ]
 }

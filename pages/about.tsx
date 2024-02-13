@@ -11,15 +11,9 @@ import audience from '../public/audience.jpg'
 
 import german from '../public/german.jpg';
 import victor from '../public/victor_cropped.jpg';
-import olly from '../public/olly.jpg'
-import dsoc from '../public/dsoc-logo-white.svg'
-import jin from '../public/jin.jpeg'
-import jj from '../public/jj.jpg'
-import sy from '../public/sy.jpg'
-import fernando from '../public/fernando.jpg'
-import deni from '../public/deni.jpeg'
-import ibi from '../public/ibi.jpeg'
 import james from '../public/james.jpg'
+import ash from '../public/ash.jpg'
+import massimo from '../public/massimo.jpg'
 
 function Tilt(props: any): JSX.Element {
     const { options, ...rest } = props;
@@ -92,10 +86,10 @@ function About() {
             linkedin: "https://www.linkedin.com/in/victor-gabaldon/"
         },
         {
-            name: "Olly Ferrier",
-            photo: olly,
-            role: "Vice President",
-            linkedin: "https://www.linkedin.com/in/oliver-f-83123a178/"
+            name: "Gherman Nicolisin",
+            photo: german,
+            role: "Education Officer",
+            linkedin: "https://www.linkedin.com/in/skymanone/"
         },
         {
             name: "James Tidbury",
@@ -104,10 +98,16 @@ function About() {
             linkedin: "https://www.linkedin.com/in/james-tidbury-b63b81227/"
         },
         {
-            name: "German Nikolishin",
-            photo: german,
-            role: "Associated",
-            linkedin: "https://www.linkedin.com/in/skymanone/"
+            name: "Ash",
+            photo: ash,
+            role: "Social Secretary",
+            linkedin: "https://www.linkedin.com/in/ash-k-b83a94203/"
+        },
+        {
+            name: "Massimo Loreti",
+            photo: massimo,
+            role: "Financial Officer",
+            linkedin: "https://www.linkedin.com/in/massimoloreti/"
         },
     ]
 
