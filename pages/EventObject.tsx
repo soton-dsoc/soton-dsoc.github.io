@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from 'next/image';
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from '../styles/EventObject.module.css';
 
 function EventObject(props: any) {
@@ -22,6 +22,13 @@ function EventObject(props: any) {
         console.log(elem?.scrollHeight);
         return elem?.scrollHeight;
     }
+
+    // have the upcoming events open by default
+    useEffect(() => {
+        if (props.category === "upcoming") {
+            setActive(true)
+        }
+    })
 
     return(
         <div className={styles.wrapper}>

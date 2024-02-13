@@ -101,7 +101,7 @@ function About() {
             name: "Ash",
             photo: ash,
             role: "Social Secretary",
-            linkedin: ""
+            linkedin: "https://www.linkedin.com/in/ash-k-b83a94203/"
         },
         {
             name: "Massimo Loreti",
