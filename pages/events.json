@@ -460,6 +460,29 @@
             "media": [
                 "ai_encode.jpg"
             ]
+        },
+        {
+            "title": "Internet Computer Basics",
+            "location": "100 / 5013",
+            "date": "2024-03-04T18:00:00",
+            "abstract": [
+                "We have an exciting event coming up next week! Nick Myers, founder of the ICP UK Hub will be presenting the foundations of the Internet Computer and how it compares to other decentralised infrastructure.",
+
+                "The Internet Computer adds autonomous serverless cloud functionality to the public Internet; making it possible to build almost any system or service entirely on a decentralised network using “canister software,” an evolution of smart contracts."
+            ],
+            "organisers": [
+                "dSoc",
+                "ICP UK Hub"
+            ],
+            "speakers": [
+                "Nick Myers"
+            ],
+            "learningOutcomes": [
+                "Learn about the foundations of the Internet Computer and how it compares to other blockchains"
+            ],
+            "media": [
+                "icp.png"
+            ]
         }
     ]
 }
