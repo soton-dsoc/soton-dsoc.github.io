@@ -80,16 +80,16 @@ function About() {
     // TODO: display (a portion of) hash checksum in the back of the card
     const team: Person[] = [
         {
-            name: "Victor Gabaldon",
-            photo: victor,
+            name: "Massimo Loreti",
+            photo: massimo,
             role: "President",
-            linkedin: "https://www.linkedin.com/in/victor-gabaldon/"
+            linkedin: "https://www.linkedin.com/in/massimoloreti/"
         },
         {
-            name: "Gherman Nicolisin",
-            photo: german,
-            role: "Education Officer",
-            linkedin: "https://www.linkedin.com/in/skymanone/"
+            name: "Ashwinkrishna Azhagesh",
+            photo: ash,
+            role: "Vice President",
+            linkedin: "www.linkedin.com/in/ashwinkrishna-azhagesh"
         },
         {
             name: "James Tidbury",
@@ -97,7 +97,9 @@ function About() {
             role: "Treasurer",
             linkedin: "https://www.linkedin.com/in/james-tidbury-b63b81227/"
         },
-        {
+        // need to add an alumini section for this lol 
+        
+        /*{
             name: "Ash",
             photo: ash,
             role: "Social Secretary",
@@ -108,7 +110,8 @@ function About() {
             photo: massimo,
             role: "Financial Officer",
             linkedin: "https://www.linkedin.com/in/massimoloreti/"
-        },
+        },*/                  
+
     ]
 
     function calculateHash(p: Person): string {

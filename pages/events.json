@@ -483,6 +483,31 @@
             "media": [
                 "icp.png"
             ]
+        },
+        {
+            "title": "Decentalised Society Hackaton",
+            "location": "B60 Level 1 and Level 2",
+            "date": "2025-02-28T18:00:00",
+            "abstract": [
+                "Get ready to build the future of Web 3! The soutampton decentralised society web 3 hack is an exciting hybrid hackathon taking place from February 28th to the 2nd of March at Building 60 West, Highfield Campus, Southampton. Whether you are a seasoned developer or just starting your journey in blockchain, this is your chance to collaborate, innovate and connect with some of the brightest minds in the space. Win ver 5k in prizes and sponsorhsip from Flare, Encode, Ether.FI, LZero Analytics and more, participtants will hack over the weekend! An incredible opportunity to showcase your skills in front of leading blockchain organisations."
+
+
+            ],
+
+            "organisers": [
+                "dSoc"
+                
+            ],
+            "speakers": [
+                "Victor, Gherman, Ash"
+            ],
+            "learningOutcomes": [
+                "Learn about the foundations of the rust, cryptography, and blockchain."
+            ],
+            "media": [
+                "icp.png"
+            ]
         }
+
     ]
 }
