@@ -14,6 +14,7 @@ import victor from '../public/victor_cropped.jpg';
 import james from '../public/james.jpg'
 import ash from '../public/ash.jpg'
 import massimo from '../public/massimo.jpg'
+import salman from '../public/salman.jpeg'
 
 function Tilt(props: any): JSX.Element {
     const { options, ...rest } = props;
@@ -97,6 +98,13 @@ function About() {
             role: "Treasurer",
             linkedin: "https://www.linkedin.com/in/james-tidbury-b63b81227/"
         },
+        {
+            name:"Salman",
+            photo: salman,
+            role: "Digital Asset Anallys",
+            linkedin: "https://www.linkedin.com/in/salman-s-743795249/"
+
+        }
         // need to add an alumini section for this lol 
         
         /*{
