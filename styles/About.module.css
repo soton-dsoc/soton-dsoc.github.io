@@ -1,40 +1,78 @@
 .about {
     padding-top: 70px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about > h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.about > h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 .aboutContainer {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 60px;
     margin-bottom: 80px;
     text-align: justify;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
 }
 
 .upperContainer, .lowerContainer {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 60px;
     align-items: center;
-}
-
-.upperImg {
-    height: 350px;
-}
-
-.lowerImg {
-    height: 330px;
+    justify-content: center;
 }
 
 .upperImg, .lowerImg {
-    border-radius: 10px;
+    flex: 0 0 auto;
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upperImg:hover, .lowerImg:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.aboutText {
+    flex: 1;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.aboutText p {
+    margin-bottom: 20px;
 }
 
 .team {
     margin-top: 50px;
     margin-bottom: 100px;
-    display: grid;
+    display: flex;
     justify-content: center;
-    grid-template-columns: repeat(4, 250px);
+    align-items: center;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -140,19 +178,23 @@
 
 @media only screen and (max-width: 1280px) {
     .aboutContainer {
-        gap: 1vw;
+        gap: 50px;
+        max-width: 1000px;
+        padding: 0 30px;
     }
 
     .upperContainer, .lowerContainer {
-        gap: 4vw;
+        gap: 50px;
+    }
+
+    .upperImg, .lowerImg {
+        width: 400px;
+        height: 280px;
     }
 
     .team {
         margin-top: 30px;
         margin-bottom: 60px;
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(4, 250px);
         gap: 30px;
     }
 
@@ -189,25 +231,31 @@
 
 @media only screen and (max-width: 992px) {
     .aboutContainer {
-        gap: 50px;
+        gap: 40px;
         text-align: left;
+        padding: 0 20px;
     }
 
     .upperContainer {
         flex-direction: column;
+        gap: 30px;
     }
 
     .lowerContainer {
         flex-direction: column-reverse;
+        gap: 30px;
     }
 
     .upperImg, .lowerImg {
         width: 100%;
-        height: auto;
+        max-width: 500px;
+        height: 250px;
+        align-self: center;
     }
 
     .team {
-        grid-template-columns: repeat(2, 250px);
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -219,8 +267,6 @@
 
 @media only screen and (max-width: 480px) {
     .team {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        gap: 30px;
     }
 }
