@@ -56,9 +56,9 @@ function EventObject(props: any) {
                                             className={styles.image} 
                                             src={`/${m}`} 
                                             alt={`Event image for ${title}`}
-                                            width={500}
-                                            height={300}
-                                            style={{ borderRadius: "10px"}}
+                                            width={600}
+                                            height={400}
+                                            style={{ borderRadius: "10px", objectFit: "contain"}}
                                         />
                                     </div>
                                 )
