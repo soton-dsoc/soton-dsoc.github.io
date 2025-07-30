@@ -145,11 +145,11 @@ function About() {
 
                     </div>
 
-                    <img src={dsocEvent.src} className={styles.upperImg}/>
+                    <Image src={dsocEvent} alt="dSoc Event" className={styles.upperImg} width={400} height={300}/>
                 </div>
 
                 <div className={styles.lowerContainer}>
-                    <img src={audience.src} className={styles.lowerImg}/>
+                    <Image src={audience} alt="Audience" className={styles.lowerImg} width={400} height={300}/>
 
                     <div className={styles.aboutText}>
                         <p>
@@ -176,7 +176,7 @@ function About() {
                                 <div className={styles.flipCard} key={i} onClick={() => window.open(p.linkedin)}>
                                     <div className={styles.fcInner}>
                                         <div className={styles.fcFront}>
-                                            <img src={p.photo.src} className={styles.clipCircle}></img>
+                                            <Image src={p.photo} alt={`${p.name} photo`} className={styles.clipCircle} width={150} height={150}/>
                                             <div className={styles.teamCardText}>
                                                 <div className={styles.teamCardName}>{p.name}</div>
                                                 <div className={styles.teamCardRole}>{p.role}</div>

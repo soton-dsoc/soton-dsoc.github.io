@@ -3,7 +3,6 @@ import styles from '../styles/Events.module.css';
 import eventsSource from './events.json'
 
 import EventObject from './EventObject';
-import { StaticImageData } from 'next/image';
 
 function Events() {
 
@@ -16,7 +15,7 @@ function Events() {
         organisers: string[],
         speakers: string[],
         learningOutcomes: string[],
-        media: StaticImageData[]
+        media: string[]
     }
 
     var events: Event[] = [];
@@ -25,13 +24,6 @@ function Events() {
         for (let i = 0; i < eventsSource.events.length; i++) {
 
             const e = eventsSource.events[i];
-
-            var mediaJSON: StaticImageData[] = [];
-
-            for (let j = 0; j < e.media.length; j++) {
-                const image: StaticImageData = require("../public/" + e.media[j]);
-                mediaJSON.push(image);
-            }
             
             events.push({
                 key: i,
@@ -42,7 +34,7 @@ function Events() {
                 organisers: e.organisers,
                 speakers: e.speakers,
                 learningOutcomes: e.learningOutcomes,
-                media: mediaJSON
+                media: e.media
             })
         }
     }
