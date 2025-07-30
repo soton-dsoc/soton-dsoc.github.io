@@ -158,7 +158,14 @@ function About() {
                                 <div className={styles.flipCard} key={i} onClick={() => window.open(p.linkedin)}>
                                     <div className={styles.fcInner}>
                                         <div className={styles.fcFront}>
-                                            <Image src={p.photo} alt={`${p.name} photo`} className={styles.clipCircle} width={150} height={150}/>
+                                            <Image 
+                                                src={p.photo} 
+                                                alt={`${p.name} photo`} 
+                                                className={styles.clipCircle} 
+                                                width={150} 
+                                                height={150}
+                                                style={{ objectFit: "cover", borderRadius: "50%" }}
+                                            />
                                             <div className={styles.teamCardText}>
                                                 <div className={styles.teamCardName}>{p.name}</div>
                                                 <div className={styles.teamCardRole}>{p.role}</div>
