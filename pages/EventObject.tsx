@@ -52,7 +52,14 @@ function EventObject(props: any) {
                             {
                                 media.map((m: string, i: number) => 
                                     <div className={styles.imageContainer} key={i}>
-                                        <Image className={styles.image} src={m} style={{ borderRadius: "10px"}} alt=""></Image>
+                                        <Image 
+                                            className={styles.image} 
+                                            src={`/${m}`} 
+                                            alt={`Event image for ${title}`}
+                                            width={600}
+                                            height={400}
+                                            style={{ borderRadius: "10px", objectFit: "contain"}}
+                                        />
                                     </div>
                                 )
                             }

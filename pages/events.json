@@ -1,6 +1,29 @@
 {
     "events": [
         {
+            "title": "Ethereum London Relaunch",
+            "date": "2025-07-30T18:00:00",
+            "location": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
+            "abstract": [
+                "Join us at the Ethereum London Relaunch event celebrating Ethereum's 10 year anniversary! dSoc will have a small stand at this exciting community gathering hosted by Encode Club. The event will feature short talks reflecting on Ethereum's past and future, networking opportunities with the broader Ethereum London community, and plenty of food and drinks. This is a great chance to connect with fellow Ethereum enthusiasts and celebrate a decade of decentralised innovation."
+            ],
+            "organisers": [
+                "dSoc",
+                "Encode Club"
+            ],
+            "speakers": [
+                "James Zaki",
+                "Tom Phillips"
+            ],
+            "learningOutcomes": [
+                "Celebrate Ethereum's 10 year anniversary",
+                "Connect with the broader Ethereum London community"
+            ],
+            "media": [
+                "ethldnrelaunch2025.jpg"
+            ]
+        },
+        {
             "title": "Blockchain 101 - Session 0",
             "date": "2022-02-08T19:00:00",
             "location": "Physics (46 / 2003)",
@@ -338,9 +361,8 @@
                 "Fish on Toast"
             ],
             "speakers": [
-                "Victor Gabaldon",
-                "German Nikolishin",
-                "Others"
+                "James Zaki",
+                "Tom Phillips"
             ],
             "learningOutcomes": [
                 "The purpose of the Decentralised Society and enterprise opportunities on campus"
@@ -485,7 +507,7 @@
             ]
         },
         {
-            "title": "Decentalised Society Hackaton",
+            "title": "Decentralised Society Hackathon",
             "location": "B60 Level 1 and Level 2",
             "date": "2025-02-28T18:00:00",
             "abstract": [

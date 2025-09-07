@@ -9,12 +9,12 @@ import { StaticImageData } from 'next/image';
 import dsocEvent from '../public/dsoc-event.jpg'
 import audience from '../public/audience.jpg'
 
-import german from '../public/german.jpg';
-import victor from '../public/victor_cropped.jpg';
-import james from '../public/james.jpg'
-import ash from '../public/ash.jpg'
-import massimo from '../public/massimo.jpg'
-import salman from '../public/salman.jpeg'
+
+
+import ojas from '../public/ojas.png'
+import dawid from '../public/dawid.jpeg'
+/* import ash from '../public/ash.jpg' */
+
 
 function Tilt(props: any): JSX.Element {
     const { options, ...rest } = props;
@@ -81,29 +81,16 @@ function About() {
     // TODO: display (a portion of) hash checksum in the back of the card
     const team: Person[] = [
         {
-            name: "Massimo Loreti",
-            photo: massimo,
+            name: "Dawid Pisarczyk",
+            photo: dawid,
             role: "President",
-            linkedin: "https://www.linkedin.com/in/massimoloreti/"
+            linkedin: "https://dawidpisarczyk.com/"
         },
         {
-            name: "Ashwinkrishna Azhagesh",
-            photo: ash,
+            name: "Ojas Arora",
+            photo: ojas,
             role: "Vice President",
-            linkedin: "www.linkedin.com/in/ashwinkrishna-azhagesh"
-        },
-        {
-            name: "James Tidbury",
-            photo: james,
-            role: "Treasurer",
-            linkedin: "https://www.linkedin.com/in/james-tidbury-b63b81227/"
-        },
-        {
-            name:"Salman",
-            photo: salman,
-            role: "Digital Asset Anallys",
-            linkedin: "https://www.linkedin.com/in/salman-s-743795249/"
-
+            linkedin: "https://www.linkedin.com/in/ojas-arora-b62430231/"
         }
         // need to add an alumini section for this lol 
         
@@ -113,12 +100,7 @@ function About() {
             role: "Social Secretary",
             linkedin: "https://www.linkedin.com/in/ash-k-b83a94203/"
         },
-        {
-            name: "Massimo Loreti",
-            photo: massimo,
-            role: "Financial Officer",
-            linkedin: "https://www.linkedin.com/in/massimoloreti/"
-        },*/                  
+       */                  
 
     ]
 
@@ -145,11 +127,11 @@ function About() {
 
                     </div>
 
-                    <img src={dsocEvent.src} className={styles.upperImg}/>
+                    <Image src={dsocEvent} alt="dSoc Event" className={styles.upperImg} priority/>
                 </div>
 
                 <div className={styles.lowerContainer}>
-                    <img src={audience.src} className={styles.lowerImg}/>
+                    <Image src={audience} alt="Audience" className={styles.lowerImg} priority/>
 
                     <div className={styles.aboutText}>
                         <p>
@@ -176,7 +158,14 @@ function About() {
                                 <div className={styles.flipCard} key={i} onClick={() => window.open(p.linkedin)}>
                                     <div className={styles.fcInner}>
                                         <div className={styles.fcFront}>
-                                            <img src={p.photo.src} className={styles.clipCircle}></img>
+                                            <Image 
+                                                src={p.photo} 
+                                                alt={`${p.name} photo`} 
+                                                className={styles.clipCircle} 
+                                                width={150} 
+                                                height={150}
+                                                style={{ objectFit: "cover", borderRadius: "50%" }}
+                                            />
                                             <div className={styles.teamCardText}>
                                                 <div className={styles.teamCardName}>{p.name}</div>
                                                 <div className={styles.teamCardRole}>{p.role}</div>
