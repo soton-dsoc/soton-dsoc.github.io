@@ -1,4 +1,4 @@
-This is a the Soton dSoc website!
+This is the Soton dSoc website!
 
 ## Getting Started
 
